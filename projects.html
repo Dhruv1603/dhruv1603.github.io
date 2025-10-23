@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dhruv Joshi | Professional Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .projects-card {
+      background: #fff;
+      max-width: 1050px;
+      width: 100%;
+      margin: 3em auto 0 auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 28px rgba(40,60,90,0.13), 0 1.5px 3.5px rgba(39,59,86,0.07);
+      padding: 3em 3em 2.3em 3em;
+    }
+    .projects-title {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 1.4em;
+      letter-spacing: 0.5px;
+    }
+    .project-block {
+      margin-bottom: 2.5em;
+    }
+    .project-headline {
+      font-size: 1.19em;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+      color: #1a366d;
+    }
+    .project-link {
+      font-size: 1.07em;
+      font-weight: 550;
+      color: #1654c1;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+    .project-desc {
+      font-size: 1.13em;
+      line-height: 1.7;
+      margin-bottom: 0.6em;
+      color: #222; 
+    }
+    .project-list {
+      margin-left: 1.7em;
+      margin-bottom: 0.6em;
+    }
+    .tech-stack {
+      margin-top: 0.1em;
+      font-size: 1.02em;
+      color: #24786d;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background: #e3e9f2;
+      margin-top: 2.2em;
+      margin-bottom: 2.2em;
+    }
+    @media (max-width: 1100px) {
+      .projects-card { max-width: 99vw; padding: 1.2em 0.6em 2em 0.6em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Professional Projects</a></li>
+        <li><a href="knowledge.html">Knowledge Roadmap</a></li>
+        <li><a href="certificates.html">Certificates & Workshops</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="projects-card">
+      <div class="projects-title">Professional Projects</div>
+      
+      <!-- Emotion-AI -->
+      <div class="project-block">
+        <div class="project-headline">
+          Emotion AI
+          <a class="project-link" href="https://github.com/Dhruv1603/Emotion-AI" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Developed an advanced Artificial Emotional Intelligence platform enabling real-time recognition of human non-verbal cues—including facial expressions and body language—for empathy-aware automation, HCI, and sentiment-driven applications.
+        </div>
+        <ul class="project-list">
+          <li>Designed and trained deep convolutional neural networks (CNNs) for emotion recognition using affective computing datasets; implemented OpenCV and React/TypeScript for live facial sentiment analysis.</li>
+          <li>Integrated the model directly with OpenAI's GPT-4 API: sentiment-aware text generation and automated affect-matching dialogue.</li>
+          <li>Deployed platform with a modular Python Flask backend and responsive web UI, enabling cross-platform access and use in customer service, virtual assistants, and feedback-rich interfaces.</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Stack:</strong> Python, TensorFlow, Keras, React, TypeScript, Flask, OpenAI API, OpenCV
+        </div>
+      </div>
+      <hr />
+
+      <!-- Visualization (Assumed data viz toolkit/Notebook project) -->
+      <div class="project-block">
+        <div class="project-headline">
+          Visualization Toolkit
+          <a class="project-link" href="https://github.com/Dhruv1603/visualization" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Created a reusable data visualization toolkit for interactive analysis and dashboard development. Components include pre-built functions for time-series, category, correlation, and statistical plot generation.
+        </div>
+        <ul class="project-list">
+          <li>Automated reporting workflows with high-quality data viz using Matplotlib, Seaborn, and Plotly.</li>
+          <li>Supported interactive dashboard prototyping for business analytics and academic research.</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Stack:</strong> Python, Matplotlib, Seaborn, Plotly, Pandas
+        </div>
+      </div>
+      <hr />
+
+      <!-- Eggplant -->
+      <div class="project-block">
+        <div class="project-headline">
+          Eggplant Disease Detection
+          <a class="project-link" href="https://github.com/Dhruv1603/Eggplant" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Built an image classification system for diagnosing eggplant diseases, designed for agricultural efficiency and early intervention support for farmers.
+        </div>
+        <ul class="project-list">
+          <li>Applied deep learning (CNN) on curated image datasets for multi-class plant disease detection with robust transfer learning.</li>
+          <li>Automated actionable reporting for targeted treatment, integrating insights into farm dashboards for agricultural extension workers.</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Stack:</strong> Python, TensorFlow, OpenCV, Keras, Data Augmentation
+        </div>
+      </div>
+      <hr />
+
+      <!-- Natural_Language_Processing (US Airline Sentiment) -->
+      <div class="project-block">
+        <div class="project-headline">
+          US Airline Sentiment Analysis
+          <a class="project-link" href="https://github.com/Dhruv1603/Natural_Language_Processing" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Developed an end-to-end sentiment analysis pipeline on the “Twitter US Airlines Review Sentiment” dataset. The project extracts actionable customer insights for airlines by automating large-scale social data mining.
+        </div>
+        <ul class="project-list">
+          <li>Preprocessed, vectorized, and labeled Twitter airline data for multi-class sentiment task (positive/neutral/negative/other).</li>
+          <li>Built and fine-tuned models using Logistic Regression, SVM, Random Forests, and compared with deep learning baselines.</li>
+          <li>Automated EDA, feature analysis, and deployed interpretability tools for interactive result presentation.</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Stack:</strong> Python, NLTK, scikit-learn, Pandas, Jupyter Notebook
+        </div>
+      </div>
+      <hr />
+
+      <!-- Healthcare-AI -->
+      <div class="project-block">
+        <div class="project-headline">
+          Healthcare AI (Brain Tumor Detection)
+          <a class="project-link" href="https://github.com/Dhruv1603/Healthcare-AI" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Created a medical imaging AI system to predict the presence of brain tumors from MRI scans, accelerating clinical diagnosis and supporting radiologist workflows.
+        </div>
+        <ul class="project-list">
+          <li>Trained deep learning models (CNN architecture) on annotated MRI datasets to classify tumor/no tumor with high recall.</li>
+          <li>Developed preprocessing pipelines for volumetric imaging, applied data augmentation to mitigate class imbalance.</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Stack:</strong> Python, TensorFlow, Keras, Medical Imaging Datasets, Data Augmentation
+        </div>
+      </div>
+      <hr />
+
+      <!-- Banana-Plant-Diseases -->
+      <div class="project-block">
+        <div class="project-headline">
+          Banana Plant Disease Classification
+          <a class="project-link" href="https://github.com/Dhruv1603/Banana-Plant-Diseases" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Implemented a robust deep learning workflow to detect and classify banana plant diseases using transfer learning, empowering precision farming and timely intervention.
+        </div>
+        <ul class="project-list">
+          <li>Processed and augmented diverse banana leaf images; developed CNN-based classifiers to accurately categorize disease states.</li>
+          <li>Showcased full workflow: data acquisition, model training, evaluation, and field-ready recommendation modules.</li>
+        </ul>
+        <div class="tech-stack">
+          <strong>Stack:</strong> Python, Keras, Transfer Learning, OpenCV, Pandas
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  <footer>
+    <p>©2025 Dhruv Joshi</p>
+  </footer>
+</body>
+</html>
