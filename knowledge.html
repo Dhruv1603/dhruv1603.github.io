@@ -6,37 +6,82 @@
   <title>Dhruv Joshi | Knowledge Roadmap</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .roadmap-card {
+    body {background: #eef3fa;}
+    .timeline-container {
+      max-width: 950px;
+      margin: 3em auto 2em auto;
+      padding: 0 16px;
+    }
+    .timeline-title {
+      font-size:2em; font-weight:700; color:#153260; 
+      text-align:center; margin-bottom:2.1em;
+    }
+    .timeline {
+      position: relative;
+      margin: 0 auto;
+      padding: 2em 0;
+      width: 95%;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 7px;
+      height: 100%;
+      background: linear-gradient(to bottom, #1e2d58 60%, #89b7ff 100%);
+      border-radius: 4px;
+    }
+    .milestone {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 3.1em;
+      position: relative;
+      width: 100%;
+    }
+    .milestone.left {justify-content:flex-end;}
+    .milestone.right {justify-content:flex-start;}
+    .milestone-content {
       background: #fff;
-      max-width: 970px;
-      margin: 2.5em auto 0 auto;
-      border-radius: 14px;
-      box-shadow: 0 4px 28px rgba(40,60,90,0.14), 0 1.5px 3.5px rgba(39,59,86,0.06);
-      padding: 2.8em 2.9em 2em 2.9em;
+      border-radius: 13px;
+      box-shadow: 0 6px 24px rgba(44,64,108,0.09);
+      padding: 1.4em 2em;
+      width: 410px;
+      margin: 0 32px;
+      position: relative;
+      z-index: 1;
+      border-left: 5px solid #4e77d4;
     }
-    .roadmap-title {
-      font-size:2em; font-weight:700; letter-spacing:0.7px; margin-bottom:1.4em; color:#193057;
+    .milestone.right .milestone-content { border-left: none; border-right: 5px solid #75c5e9; }
+    .milestone-year {
+      font-size: 1.23em;
+      font-weight:700;
+      color: #3061a6;
+      margin-bottom: 0.7em;
+      letter-spacing: 1.2px;
     }
-    .roadmap-desc {
-      font-size:1.1em; color:#2c406c; margin-bottom:1.5em;
-    }
-    .roadmap-list { margin-left: 1.8em; }
-    .roadmap-list li { margin-bottom: 1.7em; }
     .milestone-title {
-      font-size:1.13em; font-weight:600; color:#205AA7;
+      font-size:1.12em;
+      font-weight:600;
+      color: #23345d;
+      margin-bottom:0.4em;
     }
     .milestone-desc {
-      margin-left:1.3em; margin-top:0.5em; font-size:1em; color:#333;
+      font-size:1.03em;
+      color:#333;
+      margin-bottom: 0.2em;
+      line-height: 1.67;
     }
-    .roadmap-list ul {
-      margin: 0.4em 0 0.3em 1.4em;
-      padding: 0;
+    @media (max-width:950px) {
+      .timeline-container, .timeline {width: 100%;}
     }
-    .roadmap-key {
-      margin-top:2.2em; color:#283d64; font-size:1.09em; background:#f6f8fb; border-radius:7px; padding:1.2em 1.1em;
-    }
-    @media (max-width: 980px) {
-      .roadmap-card { max-width: 98vw; padding: 1.6em 1em 1.7em 1em;}
+    @media (max-width:750px) {
+      .milestone-content {width: 90%;}
+      .timeline::before {left: 6px;transform:none;}
+      .milestone {flex-direction: column;}
+      .milestone-content {margin:1em 0;}
     }
   </style>
 </head>
@@ -52,79 +97,114 @@
       </ul>
     </nav>
   </header>
-
   <main>
-    <div class="roadmap-card">
-      <div class="roadmap-title">Knowledge Roadmap</div>
-      <div class="roadmap-desc">
-        This roadmap visualizes my journey from foundational studies and certifications to hands-on projects and advanced specializations in AI, ML, and Data Science. It demonstrates a commitment to structured growth, practical skills, and lifelong learning.
-      </div>
-      <ol class="roadmap-list">
-        <li>
-          <span class="milestone-title">Foundation: Computer Engineering & Data Science</span>
-          <div class="milestone-desc">
-            <ul>
-              <li>B.E., Computer Engineering – mastery of mathematics, algorithms, and core software principles.</li>
-              <li>Early exposure to programming, databases, and analytics.</li>
-            </ul>
+    <div class="timeline-container">
+      <div class="timeline-title">My Knowledge Roadmap</div>
+      <div class="timeline">
+
+        <!-- 2017: Foundations -->
+        <div class="milestone left">
+          <div class="milestone-content">
+            <div class="milestone-year">2017</div>
+            <div class="milestone-title">Start: Computer Engineering Degree</div>
+            <div class="milestone-desc">
+              Began B.E., Computer Engineering, mastering programming fundamentals, core mathematics, algorithms, and database systems. Early exposure to Python, SQL, and basic analytics.
+            </div>
           </div>
-        </li>
-        <li>
-          <span class="milestone-title">Technical Exposure: Python, SQL, Visualization & BI</span>
-          <div class="milestone-desc">
-            <ul>
-              <li>Developed fluency in Python for automation, data manipulation, and feature engineering.</li>
-              <li>Acquired expertise in SQL; built interactive dashboards with Power BI and Tableau.</li>
-              <li>Learned best practices for business intelligence, reporting, and communication.</li>
-            </ul>
+        </div>
+
+        <!-- 2018: First Analytics/Programming Exposure -->
+        <div class="milestone right">
+          <div class="milestone-content">
+            <div class="milestone-year">2018</div>
+            <div class="milestone-title">Data Science Awareness</div>
+            <div class="milestone-desc">
+              Completed introductory coursework in data science, statistics, and basic visualization. Developed first academic projects and reports with Excel and data wrangling.
+            </div>
           </div>
-        </li>
-        <li>
-          <span class="milestone-title">Certification & Applied Workshops</span>
-          <div class="milestone-desc">
-            <ul>
-              <li>Google AI & ML, Azure Cloud, Facebook Security – taught advanced cloud and ML deployment, cyber security.</li>
-              <li>Ethical Hacking, Bug Bounty, Cyber Security – enabled system hardening and vulnerability testing.</li>
-              <li>Tableau & Data Visualization – enhanced my insights delivery for stakeholders.</li>
-            </ul>
+        </div>
+
+        <!-- 2019: Early Data Science Projects -->
+        <div class="milestone left">
+          <div class="milestone-content">
+            <div class="milestone-year">2019</div>
+            <div class="milestone-title">Technical Upskilling — Coding & Visualization</div>
+            <div class="milestone-desc">
+              Completed online certifications in Python, SQL for Data Analysis, and Tableau; participated in workshops covering ethical hacking and cybersecurity essentials.
+            </div>
           </div>
-        </li>
-        <li>
-          <span class="milestone-title">Professional Practice: Industry AI, MLOps, Data Science</span>
-          <div class="milestone-desc">
-            <ul>
-              <li>Designed production-ready AI: chatbots, healthcare ML, sentiment analysis on real-world datasets.</li>
-              <li>Orchestrated MLOps workflows on GKE/Azure; delivered scalable solution architectures (GPT-4, LangChain, Docker).</li>
-              <li>Demonstrated measurable impact: improved accuracy (+20%), business intelligence automation, efficiency (+35%).</li>
-            </ul>
+        </div>
+
+        <!-- 2020: Certifications & Applied Learning -->
+        <div class="milestone right">
+          <div class="milestone-content">
+            <div class="milestone-year">2020</div>
+            <div class="milestone-title">Certification Milestones</div>
+            <div class="milestone-desc">
+              Credentialed in Data Viz Techniques, Cyber Security, Bug Bounty, Facebook Security, and AI Bot Challenges. Built first machine learning models and performed statistical analysis using R and Python.
+            </div>
           </div>
-        </li>
-        <li>
-          <span class="milestone-title">Advanced Specializations & Ongoing Learning</span>
-          <div class="milestone-desc">
-            <ul>
-              <li>PG Diploma in Artificial Intelligence & Machine Learning (Fanshawe College, CGPA: 4.01/4.20).</li>
-              <li>Continuous skill building in LLMs, transfer learning, NLP, cloud-native MLOps, and entrepreneurship.</li>
-              <li>Engaged with AI bot competitions, PLC/Excel for automation, and startup-driven analytics projects.</li>
-            </ul>
+        </div>
+
+        <!-- 2021: Business Intelligence/Advanced Study -->
+        <div class="milestone left">
+          <div class="milestone-content">
+            <div class="milestone-year">2021</div>
+            <div class="milestone-title">Business Intelligence & Automation</div>
+            <div class="milestone-desc">
+              Built executive dashboards with Power BI and Tableau in both academic and internship settings; automated ETL processes and began hands-on NLP projects.
+            </div>
           </div>
-        </li>
-        <li>
-          <span class="milestone-title">Roadmap Ahead</span>
-          <div class="milestone-desc">
-            <ul>
-              <li>Focused on leadership in AI engineering, enterprise ML, and data-driven product development.</li>
-              <li>Active research in generative AI, cloud systems, and practical enterprise innovations.</li>
-            </ul>
+        </div>
+
+        <!-- 2022: Professional & Advanced ML -->
+        <div class="milestone right">
+          <div class="milestone-content">
+            <div class="milestone-year">2022</div>
+            <div class="milestone-title">First Industry Experience & ML</div>
+            <div class="milestone-desc">
+              Python Data Science Intern, LogicArt Technologies: Developed ETL pipelines, predictive ML models, and performed EDA and semi-supervised learning on real datasets.<br>
+              Workshops: PLC/Excel for Data Analysis, Startups & Entrepreneurship.
+            </div>
           </div>
-        </li>
-      </ol>
-      <div class="roadmap-key">
-        <strong>Visualization Key:</strong> Each step represents completed projects, mastered skills, certificates, and professional milestones. For hands-on repositories, see <a href="projects.html" style="color:#1654c1; font-weight:600; text-decoration:underline;">Professional Projects</a>.
+        </div>
+
+        <!-- 2023: Advanced AI & Cloud -->
+        <div class="milestone left">
+          <div class="milestone-content">
+            <div class="milestone-year">2023</div>
+            <div class="milestone-title">Cloud/NLP/Analytics</div>
+            <div class="milestone-desc">
+              Hemil Joshi Associates: Automated BI and NLP analytics on Azure; led customer insight initiatives. Completed Google AI & ML, Microsoft Azure Cloud, and advanced R workshops.
+            </div>
+          </div>
+        </div>
+
+        <!-- 2024: Postgraduate & Scalable AI -->
+        <div class="milestone right">
+          <div class="milestone-content">
+            <div class="milestone-year">2024</div>
+            <div class="milestone-title">Postgraduate in AI & ML</div>
+            <div class="milestone-desc">
+              Fanshawe College, Canada (CGPA 4.01/4.20): Specialized in NLP, deep learning, computer vision, and scalable AI/ML deployment (Cloud/GKE/CI-CD).
+              Led production AI projects (healthcare, chatbots) and honed MLOps expertise.
+            </div>
+          </div>
+        </div>
+
+        <!-- 2025: Advanced LLMs/Leadership -->
+        <div class="milestone left">
+          <div class="milestone-content">
+            <div class="milestone-year">2025</div>
+            <div class="milestone-title">GenAI, LLMs, Leadership</div>
+            <div class="milestone-desc">
+              Gen AI Engineer (Jay Analytix): Built and deployed multilingual GPT-4 chatbots, scalable MLOps, and advanced intent detection solutions. Continuing research in generative AI, cloud-native architectures, and enterprise-level AI product build.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
-
   <footer>
     <p>©2025 Dhruv Joshi</p>
   </footer>
