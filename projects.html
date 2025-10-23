@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dhruv Joshi | Professional Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     .projects-card {
       background: #fff;
@@ -11,7 +12,7 @@
       width: 100%;
       margin: 3em auto 0 auto;
       border-radius: 16px;
-      box-shadow: 0 4px 28px rgba(40,60,90,0.13), 0 1.5px 3.5px rgba(39,59,86,0.07);
+      box-shadow: 0 4px 28px rgba(40, 60, 90, 0.13), 0 1.5px 3.5px rgba(39, 59, 86, 0.07);
       padding: 3em 3em 2.3em 3em;
     }
     .projects-title {
@@ -40,7 +41,13 @@
       font-size: 1.13em;
       line-height: 1.7;
       margin-bottom: 0.6em;
-      color: #222; 
+      color: #222;
+    }
+    .highlight {
+      font-weight: 600;
+      color: #2962bb;
+      margin-bottom: 0.2em;
+      display: block;
     }
     .project-list {
       margin-left: 1.7em;
@@ -50,6 +57,7 @@
       margin-top: 0.1em;
       font-size: 1.02em;
       color: #24786d;
+      font-weight: 600;
     }
     hr {
       border: none;
@@ -59,7 +67,10 @@
       margin-bottom: 2.2em;
     }
     @media (max-width: 1100px) {
-      .projects-card { max-width: 99vw; padding: 1.2em 0.6em 2em 0.6em; }
+      .projects-card {
+        max-width: 99vw;
+        padding: 1.2em 0.6em 2em 0.6em;
+      }
     }
   </style>
 </head>
@@ -75,104 +86,23 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <div class="projects-card">
       <div class="projects-title">Professional Projects</div>
-      
-      <!-- Emotion-AI -->
-      <div class="project-block">
-        <div class="project-headline">
-          Emotion AI
-          <a class="project-link" href="https://github.com/Dhruv1603/Emotion-AI" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Developed an advanced Artificial Emotional Intelligence platform enabling real-time recognition of human non-verbal cues—including facial expressions and body language—for empathy-aware automation, HCI, and sentiment-driven applications.
-        </div>
-        <ul class="project-list">
-          <li>Designed and trained deep convolutional neural networks (CNNs) for emotion recognition using affective computing datasets; implemented OpenCV and React/TypeScript for live facial sentiment analysis.</li>
-          <li>Integrated the model directly with OpenAI's GPT-4 API: sentiment-aware text generation and automated affect-matching dialogue.</li>
-          <li>Deployed platform with a modular Python Flask backend and responsive web UI, enabling cross-platform access and use in customer service, virtual assistants, and feedback-rich interfaces.</li>
-        </ul>
-        <div class="tech-stack">
-          <strong>Stack:</strong> Python, TensorFlow, Keras, React, TypeScript, Flask, OpenAI API, OpenCV
-        </div>
-      </div>
-      <hr />
 
-      <!-- Visualization (Assumed data viz toolkit/Notebook project) -->
+      <!-- voice_GPT -->
       <div class="project-block">
         <div class="project-headline">
-          Visualization Toolkit
-          <a class="project-link" href="https://github.com/Dhruv1603/visualization" target="_blank">[GitHub]</a>
+          voice_GPT
+          <a class="project-link" href="https://github.com/Dhruv1603/voice_GPT" target="_blank">[GitHub]</a>
         </div>
         <div class="project-desc">
-          Created a reusable data visualization toolkit for interactive analysis and dashboard development. Components include pre-built functions for time-series, category, correlation, and statistical plot generation.
+          Developed a voice-controlled AI chatbot using GPT models integrated into a Jupyter Notebook environment. The system supports interactive voice responses and contextual understanding enhancing user engagement.
         </div>
-        <ul class="project-list">
-          <li>Automated reporting workflows with high-quality data viz using Matplotlib, Seaborn, and Plotly.</li>
-          <li>Supported interactive dashboard prototyping for business analytics and academic research.</li>
-        </ul>
-        <div class="tech-stack">
-          <strong>Stack:</strong> Python, Matplotlib, Seaborn, Plotly, Pandas
-        </div>
-      </div>
-      <hr />
-
-      <!-- Eggplant -->
-      <div class="project-block">
-        <div class="project-headline">
-          Eggplant Disease Detection
-          <a class="project-link" href="https://github.com/Dhruv1603/Eggplant" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Built an image classification system for diagnosing eggplant diseases, designed for agricultural efficiency and early intervention support for farmers.
-        </div>
-        <ul class="project-list">
-          <li>Applied deep learning (CNN) on curated image datasets for multi-class plant disease detection with robust transfer learning.</li>
-          <li>Automated actionable reporting for targeted treatment, integrating insights into farm dashboards for agricultural extension workers.</li>
-        </ul>
-        <div class="tech-stack">
-          <strong>Stack:</strong> Python, TensorFlow, OpenCV, Keras, Data Augmentation
-        </div>
-      </div>
-      <hr />
-
-      <!-- Natural_Language_Processing (US Airline Sentiment) -->
-      <div class="project-block">
-        <div class="project-headline">
-          US Airline Sentiment Analysis
-          <a class="project-link" href="https://github.com/Dhruv1603/Natural_Language_Processing" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Developed an end-to-end sentiment analysis pipeline on the “Twitter US Airlines Review Sentiment” dataset. The project extracts actionable customer insights for airlines by automating large-scale social data mining.
-        </div>
-        <ul class="project-list">
-          <li>Preprocessed, vectorized, and labeled Twitter airline data for multi-class sentiment task (positive/neutral/negative/other).</li>
-          <li>Built and fine-tuned models using Logistic Regression, SVM, Random Forests, and compared with deep learning baselines.</li>
-          <li>Automated EDA, feature analysis, and deployed interpretability tools for interactive result presentation.</li>
-        </ul>
-        <div class="tech-stack">
-          <strong>Stack:</strong> Python, NLTK, scikit-learn, Pandas, Jupyter Notebook
-        </div>
-      </div>
-      <hr />
-
-      <!-- Healthcare-AI -->
-      <div class="project-block">
-        <div class="project-headline">
-          Healthcare AI (Brain Tumor Detection)
-          <a class="project-link" href="https://github.com/Dhruv1603/Healthcare-AI" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Created a medical imaging AI system to predict the presence of brain tumors from MRI scans, accelerating clinical diagnosis and supporting radiologist workflows.
-        </div>
-        <ul class="project-list">
-          <li>Trained deep learning models (CNN architecture) on annotated MRI datasets to classify tumor/no tumor with high recall.</li>
-          <li>Developed preprocessing pipelines for volumetric imaging, applied data augmentation to mitigate class imbalance.</li>
-        </ul>
-        <div class="tech-stack">
-          <strong>Stack:</strong> Python, TensorFlow, Keras, Medical Imaging Datasets, Data Augmentation
-        </div>
+        <span class="highlight">Problem:</span> Creating seamless voice-to-text and text-to-voice interaction with real-time responsiveness.<br/>
+        <span class="highlight">Solution:</span> Leveraged Python libraries for audio processing combined with GPT for advanced language understanding; optimized for low latency and multi-turn dialogues.
+        <div class="tech-stack">Stack: Python, OpenAI GPT, SpeechRecognition, pyttsx3, Jupyter Notebook</div>
       </div>
       <hr />
 
@@ -183,19 +113,150 @@
           <a class="project-link" href="https://github.com/Dhruv1603/Banana-Plant-Diseases" target="_blank">[GitHub]</a>
         </div>
         <div class="project-desc">
-          Implemented a robust deep learning workflow to detect and classify banana plant diseases using transfer learning, empowering precision farming and timely intervention.
+          Implemented a deep learning workflow to classify banana plant diseases using transfer learning and extensive image augmentation. The solution aims to assist farmers with early disease detection for efficient intervention.
         </div>
-        <ul class="project-list">
-          <li>Processed and augmented diverse banana leaf images; developed CNN-based classifiers to accurately categorize disease states.</li>
-          <li>Showcased full workflow: data acquisition, model training, evaluation, and field-ready recommendation modules.</li>
-        </ul>
-        <div class="tech-stack">
-          <strong>Stack:</strong> Python, Keras, Transfer Learning, OpenCV, Pandas
-        </div>
+        <span class="highlight">Problem:</span> Limited labeled data and variability in plant images affected model accuracy.<br/>
+        <span class="highlight">Solution:</span> Applied robust data augmentation techniques and fine-tuned pre-trained CNNs achieving high detection accuracy.
+        <div class="tech-stack">Stack: Python, Keras, TensorFlow, OpenCV, Transfer Learning</div>
       </div>
-      
+      <hr />
+
+      <!-- Healthcare-AI -->
+      <div class="project-block">
+        <div class="project-headline">
+          Healthcare AI (Brain Tumor Detection)
+          <a class="project-link" href="https://github.com/Dhruv1603/Healthcare-AI" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Developed a CNN-based deep learning model to analyze MRI scans and predict the presence of brain tumors, facilitating early diagnosis and clinical decision support.
+        </div>
+        <span class="highlight">Problem:</span> Imbalanced and limited medical imaging dataset affecting model robustness.<br/>
+        <span class="highlight">Solution:</span> Created preprocessing pipelines with augmentation and used advanced CNN architectures to increase sensitivity and specificity.
+        <div class="tech-stack">Stack: Python, TensorFlow, Keras, Medical Imaging, Data Augmentation</div>
+      </div>
+      <hr />
+
+      <!-- Natural_Language_Processing -->
+      <div class="project-block">
+        <div class="project-headline">
+          US Airline Sentiment Analysis
+          <a class="project-link" href="https://github.com/Dhruv1603/Natural_Language_Processing" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Built a sentiment analysis pipeline analyzing Twitter data related to US airlines to extract customer satisfaction trends and actionable insights.
+        </div>
+        <span class="highlight">Problem:</span> Handling noisy and unstructured social media text data.<br/>
+        <span class="highlight">Solution:</span> Implemented rigorous NLP preprocessing, applied ML models (SVM, Random Forest), and evaluated with cross-validation for robust performance.
+        <div class="tech-stack">Stack: Python, NLTK, scikit-learn, Pandas, Jupyter Notebook</div>
+      </div>
+      <hr />
+
+      <!-- PyTorch-Capstone-Project -->
+      <div class="project-block">
+        <div class="project-headline">
+          PyTorch Capstone Project
+          <a class="project-link" href="https://github.com/Dhruv1603/PyTorch-Capstone-Project" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Developed CNN models for image classification tasks using PyTorch, emphasizing model optimization for performance and accuracy on standard datasets like CIFAR-10.
+        </div>
+        <span class="highlight">Problem:</span> Balancing complexity and accuracy while preventing overfitting.<br/>
+        <span class="highlight">Solution:</span> Employed dropout, batch normalization, and data augmentation techniques.
+        <div class="tech-stack">Stack: Python, PyTorch, CNN, Computer Vision</div>
+      </div>
+      <hr />
+
+      <!-- CNN_VS_ANN -->
+      <div class="project-block">
+        <div class="project-headline">
+          CNN vs ANN Model Comparison
+          <a class="project-link" href="https://github.com/Dhruv1603/CNN_VS_ANN" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Conducted comparative analysis between Convolutional Neural Networks (CNN) and Artificial Neural Networks (ANN) on the CIFAR-10 dataset to validate superior performance of CNNs for images.
+        </div>
+        <span class="highlight">Problem:</span> Demonstrating effective model selection for image classification.<br/>
+        <span class="highlight">Solution:</span> Built two models, compared accuracy, training time and performance metrics to guide model choice.
+        <div class="tech-stack">Stack: Python, TensorFlow, Keras, CIFAR-10</div>
+      </div>
+      <hr />
+
+      <!-- snake_game -->
+      <div class="project-block">
+        <div class="project-headline">
+          Snake Game
+          <a class="project-link" href="https://github.com/Dhruv1603/snake_game" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Coded a classic Snake game in Python showcasing GUI interaction, game logic, score tracking and real-time controls.
+        </div>
+        <span class="highlight">Problem:</span> Designing efficient real-time interaction.<br/>
+        <span class="highlight">Solution:</span> Used Python’s Pygame library to build responsive control and smooth game play.
+        <div class="tech-stack">Stack: Python, Pygame</div>
+      </div>
+      <hr />
+
+      <!-- Web-Scraping -->
+      <div class="project-block">
+        <div class="project-headline">
+          Web Scraping iPhone Reviews
+          <a class="project-link" href="https://github.com/Dhruv1603/Web-Scraping" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Created a Python-based web scraper to collect iPhone names, prices, reviews, and product links from Amazon search results to analyze product popularity and pricing trends.
+        </div>
+        <span class="highlight">Problem:</span> Handling dynamic HTML content and preventing IP blocking.<br/>
+        <span class="highlight">Solution:</span> Used Requests, BeautifulSoup with strategic delays and user-agent rotation.
+        <div class="tech-stack">Stack: Python, Requests, BeautifulSoup, Pandas</div>
+      </div>
+      <hr />
+
+      <!-- Eggplant -->
+      <div class="project-block">
+        <div class="project-headline">
+          Eggplant Disease Diagnosis
+          <a class="project-link" href="https://github.com/Dhruv1603/Eggplant" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Developed an AI model for identifying diseases in eggplant plants to assist farmers in crop care by recommending suitable treatments.
+        </div>
+        <span class="highlight">Problem:</span> Accurate disease classification from variable plant images.<br/>
+        <span class="highlight">Solution:</span> Built with deep learning and transfer learning for performance with limited data.
+        <div class="tech-stack">Stack: Python, TensorFlow, CNN, Transfer Learning</div>
+      </div>
+      <hr />
+
+      <!-- visualization -->
+      <div class="project-block">
+        <div class="project-headline">
+          Data Visualization Toolkit
+          <a class="project-link" href="https://github.com/Dhruv1603/visualization" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Developed reusable visualization tools and libraries for data exploration and reporting to assist non-technical teams in understanding complex data trends.
+        </div>
+        <span class="highlight">Problem:</span> Offering easy-to-use, customizable visualization components.<br/>
+        <span class="highlight">Solution:</span> Created modular functions driven by Matplotlib and Seaborn, enabling flexible visual analytics.
+        <div class="tech-stack">Stack: Python, Matplotlib, Seaborn, Plotly, Pandas</div>
+      </div>
+      <hr />
+
+      <!-- Emotion-AI -->
+      <div class="project-block">
+        <div class="project-headline">
+          Emotion AI
+          <a class="project-link" href="https://github.com/Dhruv1603/Emotion-AI" target="_blank">[GitHub]</a>
+        </div>
+        <div class="project-desc">
+          Implemented emotion recognition via non-verbal human cues including facial expression and body language, facilitating human-computer interaction and sentiment analysis applications.
+        </div>
+        <span class="highlight">Problem:</span> Reliable detection of subtle facial emotions in varying conditions.<br/>
+        <span class="highlight">Solution:</span> Utilized CNN-based models integrated with OpenCV and live-feedback system for real-time analysis.
+        <div class="tech-stack">Stack: Python, OpenCV, Keras, CNN, React, Flask</div>
+      </div>
     </div>
   </main>
+
   <footer>
     <p>©2025 Dhruv Joshi</p>
   </footer>
