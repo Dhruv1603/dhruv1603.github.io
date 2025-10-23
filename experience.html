@@ -22,33 +22,37 @@
       letter-spacing: 0.5px;
     }
     .job-block {
-      margin-bottom: 2.8em;
+      margin-bottom: 2.9em;
     }
-    .role {
-      font-size: 1.18em;
+    .role-company {
+      font-size: 1.19em;
+      font-weight: 600;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .role-company span {
+      margin-right: 1em;
+    }
+    .dates-location {
+      font-size: 1.04em;
+      color: #576372;
+      margin-bottom: 1em;
+    }
+    .project-title {
+      font-size: 1.1em;
       font-weight: 700;
-      margin-bottom: 0.1em;
+      margin: 1.1em 0 0.2em 0;
     }
-    .company-row {
-      font-size: 1.07em;
-      color: #34405a;
-      margin: 0 0 0.1em 0;
+    .challenge, .solution {
+      margin-left: 1em;
+      margin-bottom: 0.2em;
     }
-    .dates {
-      font-size: 0.97em;
-      color: #7b8a97;
-      margin-bottom: 0.35em;
+    .challenge span, .solution span {
+      font-weight: 600;
+      color: #2962bb;
+      margin-right: 0.5em;
     }
-    .exp-card ul {
-      margin-top: 0.4em;
-      margin-bottom: 0.8em;
-      padding-left: 1.5em;
-    }
-    .exp-card li {
-      margin-bottom: 0.45em;
-      font-size: 1.10em;
-    }
-    @media (max-width: 1200px) {
+    @media (max-width: 1100px) {
       .exp-card { max-width: 99vw; padding: 1.3em 1.1em 1em 1.1em; }
     }
   </style>
@@ -69,68 +73,96 @@
   <main>
     <div class="exp-card">
       <div class="exp-title">Professional Experience</div>
-      
-      <!-- Jay Analytix -->
+      <!-- Gen AI Engineer -->
       <div class="job-block">
-        <div class="role">Gen AI Engineer</div>
-        <div class="company-row">Jay Analytix, Canada &nbsp;|&nbsp; Remote</div>
-        <div class="dates">Jan 2025 – Present</div>
-        <ul>
-          <li>Designed and deployed multilingual GenAI chatbots (Text-to-Speech, 150+ languages) with GPT-4, LangChain, ElevenLabs, and Azure Cognitive Services.</li>
-          <li>Built real-time live-call GenAI systems processing audio input and generating responses, deploying on Azure OpenAI and GCP GKE.</li>
-          <li>Engineered and fine-tuned QLoRA/LoRA models for intent detection, improving customer support resolution speed by 35%.</li>
-          <li>Led scalable AI architecture development and full MLOps lifecycle management using Docker, CI/CD, and LangGraph for hybrid cloud deployments.</li>
-        </ul>
+        <div class="role-company">
+          <span>Gen AI Engineer</span> – <span>Jay Analytix, Canada</span>
+        </div>
+        <div class="dates-location">Remote | Jan 2025 – Present</div>
+        
+        <div class="project-title">Project: Multilingual GenAI Chatbot Platform</div>
+        <div>I designed and deployed advanced multilingual GenAI chatbots capable of text-to-speech and speech-to-text conversations in 150+ languages. Using GPT-4, LangChain, ElevenLabs, and Azure Cognitive Services, I built an end-to-end conversational ecosystem.</div>
+        <div class="challenge"><span>Challenge:</span>Handling low-latency responses while managing real-time translation and voice synthesis for multiple users.</div>
+        <div class="solution"><span>Solution:</span>Optimized inference pipelines and asynchronous response handling using Azure OpenAI and GCP GKE, achieving sub-second response times.</div>
+        
+        <div class="project-title">Project: Real-Time Live Call GenAI System</div>
+        <div>Engineered an AI system capable of processing live audio input during customer calls and generating instant AI-driven responses.</div>
+        <div class="challenge"><span>Challenge:</span>Integrating streaming audio with large language models in a production-grade environment.</div>
+        <div class="solution"><span>Solution:</span>Developed a hybrid MLOps pipeline with Docker, CI/CD, and LangGraph, enabling scalable, fault-tolerant deployments.</div>
+        
+        <div class="project-title">Project: Intent Detection Optimization (QLoRA/LoRA Models)</div>
+        <div>Fine-tuned QLoRA/LoRA-based models for intent detection, enhancing response accuracy and improving customer support resolution speed by 35%.</div>
+        <div class="challenge"><span>Challenge:</span>Balancing accuracy with computational efficiency during fine-tuning.</div>
+        <div class="solution"><span>Solution:</span>Employed parameter-efficient fine-tuning techniques with adaptive learning rates and model quantization.</div>
       </div>
-      
-      <!-- Atem -->
+
+      <!-- Atem AI Engineer -->
       <div class="job-block">
-        <div class="role">AI Engineer (Contract)</div>
-        <div class="company-row">Atem &nbsp;|&nbsp; Remote</div>
-        <div class="dates">Mar 2024 – Jan 2025</div>
-        <ul>
-          <li>Developed a cancer risk prediction application leveraging large healthcare datasets and advanced statistical modeling.</li>
-          <li>Implemented data cleaning, transformation, and feature engineering pipelines improving prediction accuracy by 20%.</li>
-          <li>Built Tableau dashboards for clinical KPIs and non-technical stakeholders.</li>
-          <li>Applied hypothesis testing and A/B experimentation to optimize model deployment and monitor business impact.</li>
-        </ul>
+        <div class="role-company">
+          <span>AI Engineer (Contract)</span> – <span>Atem</span>
+        </div>
+        <div class="dates-location">Remote | Mar 2024 – Jan 2025</div>
+        
+        <div class="project-title">Project: Cancer Risk Prediction Platform</div>
+        <div>Developed a predictive application leveraging large-scale healthcare datasets to assess cancer risk using advanced statistical and ML models.</div>
+        <div class="challenge"><span>Challenge:</span>Ensuring model interpretability and handling missing/incomplete patient data.</div>
+        <div class="solution"><span>Solution:</span>Built robust data preprocessing pipelines with feature engineering and imputation methods, boosting prediction accuracy by 20%.</div>
+        
+        <div class="project-title">Project: Clinical Analytics & Visualization</div>
+        <div>Created Tableau dashboards for real-time monitoring of clinical KPIs, making data insights accessible to non-technical stakeholders.</div>
+        <div class="challenge"><span>Challenge:</span>Translating complex data into actionable visuals.</div>
+        <div class="solution"><span>Solution:</span>Designed dynamic dashboards with clear storytelling, improving operational decision-making.</div>
       </div>
-      
+
       <!-- Hemil Joshi Associates -->
       <div class="job-block">
-        <div class="role">Finance Analyst</div>
-        <div class="company-row">Hemil Joshi Associates &nbsp;|&nbsp; On-site</div>
-        <div class="dates">May 2023 – Nov 2023</div>
-        <ul>
-          <li>Analyzed multi-channel customer data, driving 15% revenue growth and efficiency gains.</li>
-          <li>Built multilingual NLP pipelines for real-time sentiment and support analytics using Python and Azure Cognitive Services.</li>
-          <li>Automated reporting & dashboards in Power BI, enhancing executive insight with real-time data.</li>
-          <li>Developed ML models for customer intent detection and forecasting, enabling product team strategy.</li>
-        </ul>
+        <div class="role-company">
+          <span>Finance Analyst</span> – <span>Hemil Joshi Associates</span>
+        </div>
+        <div class="dates-location">On-site | May 2023 – Nov 2023</div>
+        
+        <div class="project-title">Project: Revenue Growth & Customer Insight Automation</div>
+        <div>Analyzed multi-channel customer data and identified trends that drove 15% revenue growth.</div>
+        <div class="challenge"><span>Challenge:</span>Manual reporting and disconnected data sources.</div>
+        <div class="solution"><span>Solution:</span>Built automated dashboards in Power BI and integrated real-time NLP analytics using Azure Cognitive Services for sentiment tracking.</div>
+        
+        <div class="project-title">Project: ML-Based Forecasting & Intent Detection</div>
+        <div>Developed machine learning models to detect customer intent and forecast future sales.</div>
+        <div class="challenge"><span>Challenge:</span>Data inconsistency across departments.</div>
+        <div class="solution"><span>Solution:</span>Implemented data normalization and retraining pipelines to ensure model reliability.</div>
       </div>
-      
-      <!-- AaNeel Tech -->
+
+      <!-- AaNeel Technology Solutions -->
       <div class="job-block">
-        <div class="role">Data Analyst Intern</div>
-        <div class="company-row">AaNeel Technology Solutions Pvt. Ltd., USA &nbsp;|&nbsp; On-site</div>
-        <div class="dates">Jan 2023 – Apr 2023</div>
-        <ul>
-          <li>Automated data collection and cleansing using Selenium, BeautifulSoup, and Power Query.</li>
-          <li>Developed executive Power BI dashboards to guide business decisions.</li>
-          <li>Streamlined data transformation pipelines for scalable analytics and business development.</li>
-        </ul>
+        <div class="role-company">
+          <span>Data Analyst Intern</span> – <span>AaNeel Technology Solutions Pvt. Ltd., USA</span>
+        </div>
+        <div class="dates-location">On-site | Jan 2023 – Apr 2023</div>
+        
+        <div class="project-title">Project: Business Intelligence Automation</div>
+        <div>Automated data collection and cleansing processes using Selenium, BeautifulSoup, and Power Query, reducing manual workload by 40%.</div>
+        <div class="challenge"><span>Challenge:</span>Slow data pipeline updates and inconsistent data from multiple sources.</div>
+        <div class="solution"><span>Solution:</span>Streamlined the pipeline with modular scripts and built executive Power BI dashboards for data-driven decision-making.</div>
       </div>
-      
-      <!-- LogicArt Tech -->
+
+      <!-- LogicArt Technologies -->
       <div class="job-block">
-        <div class="role">Python Data Science Intern</div>
-        <div class="company-row">LogicArt Technologies &nbsp;|&nbsp; On-site</div>
-        <div class="dates">Jun 2022 – Dec 2022</div>
-        <ul>
-          <li>Constructed efficient ETL pipelines with Pandas & NumPy, reducing data errors and boosting consistency.</li>
-          <li>Conducted exploratory data analysis and built machine learning models for business growth opportunities.</li>
-        </ul>
-      </div>    </div>
+        <div class="role-company">
+          <span>Python Data Science Intern</span> – <span>LogicArt Technologies</span>
+        </div>
+        <div class="dates-location">On-site | Jun 2022 – Dec 2022</div>
+        
+        <div class="project-title">Project: ETL and Predictive Analytics Pipeline</div>
+        <div>Constructed efficient ETL pipelines using Pandas and NumPy to manage large-scale datasets.</div>
+        <div class="challenge"><span>Challenge:</span>High error rates and redundant data entries.</div>
+        <div class="solution"><span>Solution:</span>Applied data validation and cleaning scripts that reduced data errors and improved consistency.</div>
+        
+        <div class="project-title">Project: Business Growth Analytics</div>
+        <div>Performed exploratory data analysis (EDA) and developed machine learning models to identify growth opportunities.</div>
+        <div class="challenge"><span>Challenge:</span>Limited labeled data for training.</div>
+        <div class="solution"><span>Solution:</span>Used semi-supervised learning techniques and feature engineering to enhance model accuracy.</div>
+      </div>
+    </div>
   </main>
 
   <footer>
