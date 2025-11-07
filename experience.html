@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhruv Joshi | Experience</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     .exp-card {
       background: #fff;
@@ -12,7 +12,8 @@
       width: 100%;
       margin: 3em auto 0 auto;
       border-radius: 16px;
-      box-shadow: 0 4px 28px rgba(40,60,90,0.12), 0 1.5px 3.5px rgba(39,59,86,0.05);
+      box-shadow: 0 4px 28px rgba(40, 60, 90, 0.12),
+        0 1.5px 3.5px rgba(39, 59, 86, 0.05);
       padding: 3em 3em 2.3em 3em;
     }
     .exp-title {
@@ -37,7 +38,8 @@
       font-weight: 500;
       color: #2c406c;
     }
-    .location, .dates {
+    .location,
+    .dates {
       font-size: 1.01em;
       color: #7b8a97;
     }
@@ -73,8 +75,45 @@
       margin-bottom: 2em;
     }
     @media (max-width: 1150px) {
-      .exp-card { max-width: 99vw; padding: 1.2em 0.6em 2em 0.6em; }
-      .exp-title { font-size: 1.3em; }
+      .exp-card {
+        max-width: 99vw;
+        padding: 1.2em 0.6em 2em 0.6em;
+      }
+      .exp-title {
+        font-size: 1.3em;
+      }
+    }
+    /* Highlight for active page */
+    header nav ul li a.active {
+      color: #58a4ff;
+      border-bottom: 2px solid #58a4ff;
+      font-weight: 700;
+    }
+    header nav {
+      background: #273b56;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+    }
+    header nav ul li {
+      margin: 0 1.5em;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 1.3em 0;
+      display: block;
+      transition: color 0.2s;
+    }
+    header nav ul li a:hover {
+      color: #58a4ff;
+      border-bottom: 2px solid #58a4ff;
     }
   </style>
 </head>
@@ -83,7 +122,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Introduction</a></li>
-        <li><a href="experience.html">Experience</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
         <li><a href="projects.html">Professional Projects</a></li>
         <li><a href="knowledge.html">Knowledge Roadmap</a></li>
         <li><a href="certificates.html">Certificates & Workshops</a></li>
@@ -105,23 +144,39 @@
         </div>
         <ul class="projects">
           <li>
-            <span class="project-title">Multilingual GenAI Chatbot Platform:</span>
-            Designed and deployed conversational AI chatbots (150+ languages, TTS & STT) using Custom trained and fintune transformer on top of GPT-4, LangChain, ElevenLabs, and Azure Cognitive Services.<br>
-            <span class="outcome">Built asynchronous pipelines (Azure OpenAI, GCP GKE)—achieved sub-second response times with scalable translation and synthesis.</span>
+            <span class="project-title"
+              >Multilingual GenAI Chatbot Platform:</span
+            >
+            Designed and deployed conversational AI chatbots (150+ languages,
+            TTS & STT) using Custom trained and fintune transformer on top of
+            GPT-4, LangChain, ElevenLabs, and Azure Cognitive Services.<br />
+            <span class="outcome"
+              >Built asynchronous pipelines (Azure OpenAI, GCP GKE)—achieved
+              sub-second response times with scalable translation and
+              synthesis.</span
+            >
           </li>
           <li>
             <span class="project-title">Live Call GenAI System:</span>
-            Engineered real-time AI for live customer calls, integrating streaming audio with LLMs.<br>
-            <span class="outcome">Launched hybrid MLOps (Docker, CI/CD, LangGraph), enabling robust, production-grade deployments.</span>
+            Engineered real-time AI for live customer calls, integrating
+            streaming audio with LLMs.<br />
+            <span class="outcome"
+              >Launched hybrid MLOps (Docker, CI/CD, LangGraph), enabling robust,
+              production-grade deployments.</span
+            >
           </li>
           <li>
             <span class="project-title">Intent Detection Optimization:</span>
-            Fine-tuned QLoRA/LoRA models, elevating support resolution speed by 35%.<br>
-            <span class="outcome">Applied parameter-efficient tuning (model quantization, adaptive LR) for accurate, fast inference at scale.</span>
+            Fine-tuned QLoRA/LoRA models, elevating support resolution speed by
+            35%.<br />
+            <span class="outcome"
+              >Applied parameter-efficient tuning (model quantization, adaptive LR)
+              for accurate, fast inference at scale.</span
+            >
           </li>
         </ul>
       </div>
-      <hr/>
+      <hr />
 
       <!-- Atem -->
       <div class="job-block">
@@ -134,17 +189,25 @@
         <ul class="projects">
           <li>
             <span class="project-title">Cancer Risk Prediction Platform:</span>
-            Developed ML/statistical models on large healthcare datasets for robust cancer risk assessment.<br>
-            <span class="outcome">Deployed feature engineering and imputation strategies—improved model accuracy by 20% (production monitoring included interpretability layer).</span>
+            Developed ML/statistical models on large healthcare datasets for
+            robust cancer risk assessment.<br />
+            <span class="outcome"
+              >Deployed feature engineering and imputation strategies—improved
+              model accuracy by 20% (production monitoring included interpretability
+              layer).</span
+            >
           </li>
           <li>
             <span class="project-title">Clinical Analytics & Visualization:</span>
-            Designed dynamic Tableau dashboards for real-time stakeholder insight.<br>
-            <span class="outcome">Scientific storytelling: enabled fast decision-making and clear ops feedback for non-technical users.</span>
+            Designed dynamic Tableau dashboards for real-time stakeholder insight.<br />
+            <span class="outcome"
+              >Scientific storytelling: enabled fast decision-making and clear ops
+              feedback for non-technical users.</span
+            >
           </li>
         </ul>
       </div>
-      <hr/>
+      <hr />
 
       <!-- Hemil Joshi Associates -->
       <div class="job-block">
@@ -156,18 +219,27 @@
         </div>
         <ul class="projects">
           <li>
-            <span class="project-title">Revenue Growth & Customer Insight Automation:</span>
-            Led analytics on multi-channel data, driving 15% revenue growth; automated sentiment tracking with Azure Cognitive Services.<br>
-            <span class="outcome">Unified, automated Power BI dashboards—delivered insights directly to executives.</span>
+            <span class="project-title"
+              >Revenue Growth & Customer Insight Automation:</span
+            >
+            Led analytics on multi-channel data, driving 15% revenue growth;
+            automated sentiment tracking with Azure Cognitive Services.<br />
+            <span class="outcome"
+              >Unified, automated Power BI dashboards—delivered insights directly
+              to executives.</span
+            >
           </li>
           <li>
             <span class="project-title">ML-Based Forecasting & Intent Detection:</span>
-            Developed intent detection and sales forecasting ML models.<br>
-            <span class="outcome">Improved forecast reliability via consistent data normalization and retraining workflows.</span>
+            Developed intent detection and sales forecasting ML models.<br />
+            <span class="outcome"
+              >Improved forecast reliability via consistent data normalization and
+              retraining workflows.</span
+            >
           </li>
         </ul>
       </div>
-      <hr/>
+      <hr />
 
       <!-- AaNeel Technology Solutions -->
       <div class="job-block">
@@ -180,12 +252,15 @@
         <ul class="projects">
           <li>
             <span class="project-title">Business Intelligence Automation:</span>
-            Automated and modularized ETL (Selenium, BeautifulSoup, Power Query); delivered executive-level BI dashboards.<br>
-            <span class="outcome">Reduced manual effort by 40% and accelerated data-driven decisions.</span>
+            Automated and modularized ETL (Selenium, BeautifulSoup, Power Query);
+            delivered executive-level BI dashboards.<br />
+            <span class="outcome"
+              >Reduced manual effort by 40% and accelerated data-driven decisions.</span
+            >
           </li>
         </ul>
       </div>
-      <hr/>
+      <hr />
 
       <!-- LogicArt Technologies -->
       <div class="job-block">
@@ -198,8 +273,12 @@
         <ul class="projects">
           <li>
             <span class="project-title">ETL and Predictive Analytics Pipeline:</span>
-            Built scalable ETL pipelines (Python, Pandas, NumPy) and EDA systems for business growth.<br>
-            <span class="outcome">Cut errors—introduced validation/cleaning. Boosted model accuracy with semi-supervised techniques.</span>
+            Built scalable ETL pipelines (Python, Pandas, NumPy) and EDA systems for
+            business growth.<br />
+            <span class="outcome"
+              >Cut errors—introduced validation/cleaning. Boosted model accuracy with
+              semi-supervised techniques.</span
+            >
           </li>
         </ul>
       </div>
