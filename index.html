@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhruv Joshi | Introduction</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -15,7 +15,7 @@
     header nav {
       background: #273b56;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(39,59,86,0.03);
+      box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);
     }
     header nav ul {
       list-style: none;
@@ -38,6 +38,12 @@
       color: #58a4ff;
       border-bottom: 2px solid #58a4ff;
     }
+    /* Highlight for active page */
+    header nav ul li a.active {
+      color: #58a4ff;
+      border-bottom: 2px solid #58a4ff;
+      font-weight: 700;
+    }
     main {
       display: flex;
       justify-content: center;
@@ -51,7 +57,8 @@
       width: 100%;
       margin: 3em auto 0 auto;
       border-radius: 16px;
-      box-shadow: 0 4px 28px rgba(40,60,90,0.11), 0 1.5px 3.5px rgba(39,59,86,0.04);
+      box-shadow: 0 4px 28px rgba(40, 60, 90, 0.11),
+        0 1.5px 3.5px rgba(39, 59, 86, 0.04);
       padding: 3em 3em 2.5em 3em;
     }
     .profile-card h1 {
@@ -66,7 +73,8 @@
       margin-bottom: 1em;
       color: #273b56;
     }
-    .profile-card p, .profile-card ul {
+    .profile-card p,
+    .profile-card ul {
       font-size: 1.13em;
     }
     .profile-card ul {
@@ -91,7 +99,7 @@
     .degree-title {
       font-size: 1.23em;
       font-weight: 700;
-      letter-spacing: 0.0px;
+      letter-spacing: 0px;
       margin-bottom: 0.7em;
       margin-top: 1.1em;
       white-space: nowrap;
@@ -124,7 +132,9 @@
         max-width: 99vw;
         padding: 1.2em 0.7em 1.5em 0.7em;
       }
-      .degree-title { white-space: normal; }
+      .degree-title {
+        white-space: normal;
+      }
       .professional-summary {
         padding: 1.2em 1em;
         font-size: 1em;
@@ -136,7 +146,7 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Introduction</a></li>
+        <li><a href="index.html" class="active">Introduction</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Professional Projects</a></li>
         <li><a href="knowledge.html">Knowledge Roadmap</a></li>
@@ -148,31 +158,72 @@
   <main>
     <div class="profile-card">
       <h1>Dhruv Joshi</h1>
-      
+
       <div class="professional-summary">
-        <strong>AI Engineer | ML Engineer | Data Scientist | Gen-AI Engineer</strong> with proven expertise deploying production-grade AI systems that drive measurable business outcomes. Currently engineering multilingual GenAI chatbots and real-time conversational AI achieving <strong>35% efficiency improvements</strong> and serving <strong>1,000+ concurrent users</strong> across enterprise clients. Specialized in end-to-end machine learning pipelines—from statistical modeling and feature engineering to MLOps deployment on Azure and GCP cloud platforms. Track record includes developing cancer risk prediction models with <strong>95.7% accuracy</strong> processing 50,000+ patient records, delivering <strong>$180K revenue growth</strong> through customer analytics, and building NLP sentiment analysis systems processing 25,000+ interactions monthly. Expert in transforming complex data challenges into scalable AI solutions using Python, deep learning frameworks, and modern MLOps practices. Passionate about leveraging cutting-edge AI technologies—including GPT-4, LangChain, and model fine-tuning—to solve real-world problems across healthcare, finance, and customer experience domains.
+        <strong
+          >AI Engineer | ML Engineer | Data Scientist | Gen-AI Engineer</strong
+        >
+        with proven expertise deploying production-grade AI systems that drive
+        measurable business outcomes. Currently engineering multilingual GenAI
+        chatbots and real-time conversational AI achieving
+        <strong>35% efficiency improvements</strong> and serving
+        <strong>1,000+ concurrent users</strong> across enterprise clients.
+        Specialized in end-to-end machine learning pipelines—from statistical
+        modeling and feature engineering to MLOps deployment on Azure and GCP
+        cloud platforms. Track record includes developing cancer risk
+        prediction models with <strong>95.7% accuracy</strong> processing
+        50,000+ patient records, delivering <strong>$180K revenue growth</strong>
+        through customer analytics, and building NLP sentiment analysis systems
+        processing 25,000+ interactions monthly. Expert in transforming complex
+        data challenges into scalable AI solutions using Python, deep learning
+        frameworks, and modern MLOps practices. Passionate about leveraging
+        cutting-edge AI technologies—including GPT-4, LangChain, and model
+        fine-tuning—to solve real-world problems across healthcare, finance,
+        and customer experience domains.
       </div>
 
       <h2>Contact Details</h2>
-      <p><strong>Email:</strong> <a href="mailto:dhruvjoshi16dj@gmail.com">dhruvjoshi16dj@gmail.com</a></p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:dhruvjoshi16dj@gmail.com">dhruvjoshi16dj@gmail.com</a>
+      </p>
       <p><strong>Phone:</strong> 382-882-0186</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dhruv-joshi1603/" target="_blank">dhruv-joshi1603</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/Dhruv1603" target="_blank">Dhruv1603</a></p>
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/dhruv-joshi1603/" target="_blank"
+          >dhruv-joshi1603</a
+        >
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/Dhruv1603" target="_blank">Dhruv1603</a>
+      </p>
       <p><strong>Address:</strong> Toronto, ON, Canada</p>
 
       <section id="education">
         <h2>Education</h2>
         <div class="edu-block">
-          <div class="degree-title"><strong>Postgraduate in Artificial Intelligence & Machine Learning</strong></div>
+          <div class="degree-title">
+            <strong>Postgraduate in Artificial Intelligence & Machine Learning</strong>
+          </div>
           <div class="edu-school">Fanshawe College, London, ON, Canada</div>
           <div class="edu-desc">Dean's & President's Honour</div>
-          <div class="edu-meta">CGPA: <span style="font-weight:700;">4.01/4.20</span></div>
+          <div class="edu-meta">
+            CGPA: <span style="font-weight:700;">4.01/4.20</span>
+          </div>
         </div>
         <div class="edu-block">
-          <div class="degree-title"><strong>Bachelor of Engineering in Computer Engineering</strong></div>
-          <div class="edu-school">Gujarat Technological University, Ahmedabad, India</div>
+          <div class="degree-title">
+            <strong>Bachelor of Engineering in Computer Engineering</strong>
+          </div>
+          <div class="edu-school">
+            Gujarat Technological University, Ahmedabad, India
+          </div>
           <div class="edu-desc">Dean's Honour</div>
-          <div class="edu-meta">CGPA: <span style="font-weight:700;">8.66/10</span> &nbsp;|&nbsp; State Gold Medal in Chess</div>
+          <div class="edu-meta">
+            CGPA: <span style="font-weight:700;">8.66/10</span>
+            &nbsp;|&nbsp; State Gold Medal in Chess
+          </div>
         </div>
       </section>
     </div>
