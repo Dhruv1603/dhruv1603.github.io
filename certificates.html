@@ -12,7 +12,8 @@
       width: 100%;
       margin: 3em auto 0 auto;
       border-radius: 16px;
-      box-shadow: 0 4px 28px rgba(40, 60, 90, 0.13), 0 1.5px 3.5px rgba(39, 59, 86, 0.07);
+      box-shadow: 0 4px 28px rgba(40, 60, 90, 0.13),
+        0 1.5px 3.5px rgba(39, 59, 86, 0.07);
       padding: 3em 3em 2.5em 3em;
     }
     .cert-title {
@@ -48,6 +49,38 @@
         padding: 1.5em 1em;
       }
     }
+    /* Highlight for active page */
+    header nav ul li a.active {
+      color: #58a4ff;
+      border-bottom: 2px solid #58a4ff;
+      font-weight: 700;
+    }
+    header nav {
+      background: #273b56;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+    }
+    header nav ul li {
+      margin: 0 1.5em;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 1.3em 0;
+      display: block;
+      transition: color 0.2s;
+    }
+    header nav ul li a:hover {
+      color: #58a4ff;
+      border-bottom: 2px solid #58a4ff;
+    }
   </style>
 </head>
 <body>
@@ -58,7 +91,7 @@
         <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Professional Projects</a></li>
         <li><a href="knowledge.html">Knowledge Roadmap</a></li>
-        <li><a href="certificates.html">Certificates & Workshops</a></li>
+        <li><a href="certificates.html" class="active">Certificates & Workshops</a></li>
       </ul>
     </nav>
   </header>
@@ -66,82 +99,133 @@
   <main>
     <div class="cert-card">
       <div class="cert-title">Certificates & Workshops</div>
-      
+
       <div class="cert-item">
         <h3>Artificial Intelligence by Google</h3>
-        <p>Comprehensive introduction to AI concepts, machine learning algorithms, and practical AI application development under Google's renowned curriculum.</p>
+        <p>
+          Comprehensive introduction to AI concepts, machine learning
+          algorithms, and practical AI application development under Google's
+          renowned curriculum.
+        </p>
       </div>
-      
+
       <div class="cert-item">
         <h3>Machine Learning by Google</h3>
-        <p>An in-depth course focusing on supervised and unsupervised learning, model evaluation, and real-world machine learning pipelines taught by Google experts.</p>
+        <p>
+          An in-depth course focusing on supervised and unsupervised learning,
+          model evaluation, and real-world machine learning pipelines taught by
+          Google experts.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Azure Webinar at Toronto Microsoft</h3>
-        <p>Hands-on webinar covering Microsoft Azure cloud platform for AI and ML workloads, including deployment pipelines, scaling, and cloud-native AI services.</p>
+        <p>
+          Hands-on webinar covering Microsoft Azure cloud platform for AI and ML
+          workloads, including deployment pipelines, scaling, and cloud-native
+          AI services.
+        </p>
       </div>
-      
+
       <div class="cert-item">
         <h3>Ethical Hacking</h3>
-        <p>Training in cybersecurity fundamentals and ethical penetration testing techniques to identify vulnerabilities and enhance system security.</p>
+        <p>
+          Training in cybersecurity fundamentals and ethical penetration
+          testing techniques to identify vulnerabilities and enhance system
+          security.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Bug Bounty Hunting</h3>
-        <p>Learned practical methods to discover software vulnerabilities and responsibly disclose for rewards, focusing on web and mobile platforms.</p>
+        <p>
+          Learned practical methods to discover software vulnerabilities and
+          responsibly disclose for rewards, focusing on web and mobile
+          platforms.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Cyber Security</h3>
-        <p>Broad exploration of digital security principles including threat modeling, cryptography, and defensive best practices for enterprise environments.</p>
+        <p>
+          Broad exploration of digital security principles including threat
+          modeling, cryptography, and defensive best practices for enterprise
+          environments.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Facebook Security Quiz</h3>
-        <p>Participated in an industry-recognized security knowledge assessment emphasizing privacy, threat detection, and ethical responsibilities.</p>
+        <p>
+          Participated in an industry-recognized security knowledge assessment
+          emphasizing privacy, threat detection, and ethical responsibilities.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Data Visualization Techniques</h3>
-        <p>Course focusing on effective data visualization methods using Power BI, Tableau, and Python visualization libraries to create compelling insights.</p>
+        <p>
+          Course focusing on effective data visualization methods using Power BI,
+          Tableau, and Python visualization libraries to create compelling insights.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>SQL for Data Analysis</h3>
-        <p>Mastered SQL querying and data manipulation skills critical for efficient data exploration and reporting tasks in data science projects.</p>
+        <p>
+          Mastered SQL querying and data manipulation skills critical for
+          efficient data exploration and reporting tasks in data science projects.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Introduction to Data Science</h3>
-        <p>Fundamental concepts in data science including statistics, data wrangling, and exploratory data analysis, preparing foundations for advanced ML.</p>
+        <p>
+          Fundamental concepts in data science including statistics, data
+          wrangling, and exploratory data analysis, preparing foundations for
+          advanced ML.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Tableau for Data Visualization</h3>
-        <p>Hands-on training building interactive dashboards and visual analytics in Tableau for diverse business intelligence applications.</p>
+        <p>
+          Hands-on training building interactive dashboards and visual analytics
+          in Tableau for diverse business intelligence applications.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Techie Guru (AI Bot Challenges)</h3>
-        <p>Engaged in AI challenges focused on chatbot design, natural language processing, and interactive dialogue systems.</p>
+        <p>
+          Engaged in AI challenges focused on chatbot design, natural language
+          processing, and interactive dialogue systems.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>PLC Workshop Excel for Data Analysis</h3>
-        <p>Practical workshop covering Excel-based data analysis with PLC integration for automation and manufacturing process optimization.</p>
+        <p>
+          Practical workshop covering Excel-based data analysis with PLC
+          integration for automation and manufacturing process optimization.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Statistical Analysis with R</h3>
-        <p>Advanced training on statistical techniques including hypothesis testing, regression, and data modeling using R programming.</p>
+        <p>
+          Advanced training on statistical techniques including hypothesis
+          testing, regression, and data modeling using R programming.
+        </p>
       </div>
 
       <div class="cert-item">
         <h3>Start-Ups and Entrepreneurship and Data Analysis with Python</h3>
-        <p>Explored startup ecosystem fundamentals alongside Python-driven data analysis and visualization for effective business decision-making.</p>
+        <p>
+          Explored startup ecosystem fundamentals alongside Python-driven data
+          analysis and visualization for effective business decision-making.
+        </p>
       </div>
-
     </div>
   </main>
 
