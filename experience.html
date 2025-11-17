@@ -4,179 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhruv Joshi | Experience</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    /* ...keep your previous style definitions here... */
-    .exp-card { background: #fff; max-width: 1050px; width: 100%; margin: 3em auto 0 auto; border-radius: 16px; box-shadow: 0 4px 28px rgba(40, 60, 90, 0.12), 0 1.5px 3.5px rgba(39, 59, 86, 0.05); padding: 3em 3em 2.3em 3em; }
-    .exp-title { font-size: 2.1em; font-weight: 700; margin-bottom: 1.6em; letter-spacing: 0.5px; }
-    .job-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: baseline; }
-    .position { font-size: 1.23em; font-weight: 650; color: #232a33; }
-    .company { font-size: 1.12em; font-weight: 500; color: #2c406c; }
-    .location, .dates { font-size: 1.01em; color: #7b8a97; }
-    .job-block { margin-bottom: 2.8em; }
-    .project-title { font-weight: 600; color: #183e72; margin-top: 1em; margin-bottom: 6px; font-size: 1.07em; }
-    .exp-card ul.projects { margin: 0 0 1.5em 1.5em; padding: 0; }
-    .exp-card ul.projects li { margin-bottom: 1.1em; font-size: 1.11em; line-height: 1.75; }
-    .outcome { color: #21734c; font-weight: 540; font-size: 1.02em; }
-    .tech-stack { font-size: 0.95em; color: #5a6c7d; margin: 0.8em 0 1em 0; font-style: italic; }
-    hr { border: none; height: 1px; background: #e3e9f2; margin-top: 2em; margin-bottom: 2em; }
-    @media (max-width: 1150px) {
-      .exp-card { max-width: 99vw; padding: 1.2em 0.6em 2em 0.6em; }
-      .exp-title { font-size: 1.3em; }
-    }
-    /* ...navigation styles (keep as-is)... */
+    body { font-family: Arial, sans-serif; background: #f4f8fd; margin: 0; }
+    .container { max-width: 700px; margin: 3em auto; background: #fff; padding: 2.2em 2.8em; border-radius: 14px; box-shadow: 0 2px 16px rgba(52,72,100,0.13); }
+    h2 { font-size: 1.6em; margin-bottom: 1.2em; }
+    .exp-group { margin-bottom: 2.2em; }
+    .role { font-weight: bold; font-size: 1.13em; color: #203a53; }
+    .company { color: #2c406c; font-weight: 500; margin-left: 4px;}
+    .dates, .loc { color: #7b8a97; font-size: 1em; margin-left: 6px;}
+    .point, .intern-point { margin-left: 0; margin-top: 0.7em; font-size: 1.04em; line-height: 1.75; }
+    h3 { font-size: 1.15em; margin-top: 2em; margin-bottom: 0.3em; }
+    .section-header { font-weight: bold; margin-top: 2em; color: #285b80; letter-spacing: 0.5px;}
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Introduction</a></li>
-        <li><a href="experience.html" class="active">Experience</a></li>
-        <li><a href="projects.html">Professional Projects</a></li>
-        <li><a href="knowledge.html">Knowledge Roadmap</a></li>
-        <li><a href="certificates.html">Certificates & Workshops</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="exp-card">
-      <div class="exp-title">Professional Experience</div>
-
-      <!-- Jay Analytix -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">ML Engineer – GenAI Systems</div>
-          <div class="company">Jay Analytix, Canada</div>
-          <div class="location">Contract - Remote</div>
-          <div class="dates">Jan 2025 – Present</div>
-        </div>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong> GPT-4, LangChain, Docker, Kubernetes, Azure OpenAI, GCP GKE, ElevenLabs, QLoRA/LoRA, CI/CD, Python, PyTorch, LangGraph, Agile/Scrum
-        </p>
-        <ul class="projects">
-          <li>
-            <span class="project-title">GenAI Multilingual Chatbot Platform:</span>
-            Architected next-gen multimodal chatbots and call automation integrating Retrieval-Augmented Generation (RAG), hybrid LLM stacks, and real-time inference, serving TD Bank, RBC, and Quest Diagnostics.
-            <br/><span class="outcome">Deployed with Docker & Kubernetes, enabled sub-100ms latency and 1,000+ concurrent sessions, achieving 99.2% uptime. Implemented Agile/Scrum for rapid feature iteration and translation at scale (150+ languages, TTS/STT).</span>
-          </li>
-          <li>
-            <span class="project-title">Domain-Specific LLM Optimization:</span>
-            Applied QLoRA fine-tuning to custom LLMs and orchestrated vector database retrieval, Kubernetes-based model serving, and automated agent workflows through CI/CD pipelines for fintech & healthcare clients.
-            <br/><span class="outcome">Drove measurable accuracy gains and seamless production deployment. Collaborated in Agile sprints with cross-functional teams—reducing user support issues by 22%.</span>
-          </li>
-          <li>
-            <span class="project-title">Live Call GenAI System:</span>
-            Engineered real-time AI for live customer calls, integrating streaming audio with LLMs and WebSockets.
-            <br/><span class="outcome">Launched hybrid MLOps architecture—Docker containers, Kubernetes orchestration, automated testing and monitoring frameworks (LangGraph). Delivered 99.2% uptime and scalable deployments on Azure/GCP.</span>
-          </li>
-          <li>
-            <span class="project-title">Intent Detection Optimization:</span>
-            Fine-tuned QLoRA/LoRA models, elevating support resolution speed by 35%.
-            <br/><span class="outcome">Applied parameter-efficient tuning (model quantization, adaptive learning rate) for accurate, fast inference at scale.</span>
-          </li>
-        </ul>
+  <div class="container">
+    <h2>Work Experience</h2>
+    <div class="exp-group">
+      <span class="role">ML Engineer - GenAI Systems</span>
+      <span class="company">Jay Analytix, Canada</span>
+      <span class="dates">Jan 2025 – Present</span>
+      <span class="loc">(Contract - Remote)</span>
+      <div class="point">
+        Architected next-gen multimodal GenAI chatbots and call automation solutions integrating Retrieval-Augmented Generation (RAG), hybrid LLM stacks, and real-time inference with Docker & Kubernetes orchestration, deployed for TD Bank, RBC, and Quest Diagnostics – enabling high-velocity support and AI-powered customer journeys at scale (sub-100ms latency, 1,000+ concurrent sessions, 99.2% uptime). Implemented Agile/Scrum workflows for rapid iteration.
       </div>
-      <hr />
-
-      <!-- Atem -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">ML Engineer – Healthcare AI</div>
-          <div class="company">Atem, Japan/USA</div>
-          <div class="location">Contract - Remote</div>
-          <div class="dates">Mar 2024 – Jan 2025</div>
-        </div>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong> Python, Docker, Kubernetes, Tableau, Azure ML, Advanced Feature Engineering, Imputation, CI/CD Pipelines
-        </p>
-        <ul class="projects">
-          <li>
-            <span class="project-title">Cancer Detection Platform:</span>
-            Developed and deployed high-accuracy cancer detection models (97.7% ROC-AUC) for enterprise healthcare clients.
-            <br/><span class="outcome">Used Docker containerization and Kubernetes orchestration, improving early diagnosis at scale. Implemented CI/CD pipelines for model retraining, monitoring, and clinical validation, delivering $2M+ business impact.</span>
-          </li>
-          <li>
-            <span class="project-title">Automated ML & Reporting Dashboards:</span>
-            Designed automated ML pipelines and dynamic Tableau dashboards for real-time stakeholder insight.
-            <br/><span class="outcome">Reduced deployment latency by 35%. Enabled scientific storytelling and ops feedback for non-technical users. Data insights accelerated decision-making in clinical ops.</span>
-          </li>
-        </ul>
-      </div>
-      <hr />
-
-      <!-- Hemil Joshi & Associates -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">AI Finance Analyst</div>
-          <div class="company">Hemil Joshi & Associates, India</div>
-          <div class="location">On-site</div>
-          <div class="dates">May 2023 – Nov 2023</div>
-        </div>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong> Python, ETL, Power BI, Azure Cognitive Services, NLP, Automated Analytics
-        </p>
-        <ul class="projects">
-          <li>
-            <span class="project-title">Automated Financial Reporting & ETL:</span>
-            Automated financial reporting using Python and ETL processes, optimizing analytics pipelines for global finance clients (JPMorgan Chase, Goldman Sachs, NJ Group, RIL).
-            <br/><span class="outcome">Achieved $180K revenue growth and saved 60+ hours/month. Enabled 45% faster decision support using AI/ML-driven insights and real-time Power BI dashboards.</span>
-          </li>
-          <li>
-            <span class="project-title">NLP Sentiment Analysis for Investment:</span>
-            Developed sentiment analysis models to inform financial strategy and investment.
-            <br/><span class="outcome">Empowered clients with automated sentiment tracking using Azure Cognitive Services, improving investment outcomes and executive decision-making.</span>
-          </li>
-        </ul>
-      </div>
-      <hr />
-
-      <!-- AaNeel Technology Solutions -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">Data Analyst Intern</div>
-          <div class="company">AaNeel Technology Solutions Pvt. Ltd., USA</div>
-          <div class="location">On-site</div>
-          <div class="dates">Jan 2023 – Apr 2023</div>
-        </div>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong> Selenium, BeautifulSoup, Power Query, ETL, BI, Python
-        </p>
-        <ul class="projects">
-          <li>
-            <span class="project-title">Healthcare BI & ETL Automation:</span>
-            Built ETL automation workflows for healthcare datasets (clients: UnitedHealth Group, CVS Health, Kaiser Permanente).
-            <br/><span class="outcome">Automated BI dashboards and analytics pipelines, improving clinical reporting and enabling 40% faster, AI-driven decision support for stakeholders and care teams.</span>
-          </li>
-        </ul>
-      </div>
-      <hr />
-
-      <!-- LogicArt Technologies -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">Python Data Science Intern</div>
-          <div class="company">LogicArt Technologies</div>
-          <div class="location">On-site</div>
-          <div class="dates">Jun 2022 – Dec 2022</div>
-        </div>
-        <p class="tech-stack">
-          <strong>Tech Stack:</strong> Python, Pandas, NumPy, Semi-supervised learning, Data Validation, EDA
-        </p>
-        <ul class="projects">
-          <li>
-            <span class="project-title">ETL and Scalable ML Pipeline:</span>
-            Built enterprise-grade ETL with Python and Pandas, ensuring scalable data availability for machine learning initiatives.
-            <br/><span class="outcome">Improved model accuracy with semi-supervised learning and advanced data validation. Reduced processing errors, boosted analytics impact for business clients.</span>
-          </li>
-        </ul>
+      <div class="point">
+        Applied QLoRA fine-tuning techniques to domain-specific large language models, orchestrating vector database retrieval, Kubernetes-based model serving, and automated agent architectures through CI/CD pipelines to drive significant accuracy improvements and ensure seamless, production-ready adoption of AI solutions for leading fintech and healthcare clients. Collaborated in Agile sprints with cross-functional teams.
       </div>
     </div>
-  </main>
 
-  <footer>
-    <p>©2025 Dhruv Joshi</p>
-  </footer>
+    <div class="exp-group">
+      <span class="role">ML Engineer - Healthcare AI</span>
+      <span class="company">Atem, Japan/USA</span>
+      <span class="dates">Mar 2024 – Jan 2025</span>
+      <span class="loc">(Contract - Remote)</span>
+      <div class="point">
+        Developed and deployed high-accuracy cancer detection models (97.7% ROC-AUC) for enterprise healthcare clients using Docker containerization and Kubernetes orchestration, improving early diagnosis and supporting clinical decision-making at scale. Implemented CI/CD pipelines for automated model retraining and validation.
+      </div>
+      <div class="point">
+        Designed automated ML pipelines and dashboards, reducing model deployment latency by 35% and delivering $2M+ in business impact through actionable healthcare analytics.
+      </div>
+    </div>
+
+    <div class="exp-group">
+      <span class="role">AI Finance Analyst</span>
+      <span class="company">Hemil Joshi & Associates, India</span>
+      <span class="dates">May 2023 – Nov 2023</span>
+      <div class="point">
+        Automated financial reporting workflows using Python and ETL processes, resulting in $180K revenue growth and saving 60+ hours per month. Optimized real-time analytics pipelines, enabling 45% faster decision support for global finance clients through AI/ML-driven insights.
+      </div>
+      <div class="point">
+        Developed NLP sentiment analysis models to analyze financial datasets and inform investment strategies for clients including JPMorgan Chase, Goldman Sachs, NJ Group, and RIL (Reliance Industries Limited).
+      </div>
+    </div>
+
+    <h3 class="section-header">Internship</h3>
+    <div class="exp-group">
+      <span class="role">Data Analyst Intern</span>
+      <span class="company">AaNeel Technology Solutions Pvt. Ltd., USA</span>
+      <span class="dates">Jan 2023 – Apr 2023</span>
+      <div class="intern-point">
+        Build ETL automation workflows with tools like Selenium, BeautifulSoup (BS4) and Power Query for healthcare datasets used by clients including UnitedHealth Group, CVS Health, and Kaiser Permanente, supporting downstream AI/ML model development.
+      </div>
+      <div class="intern-point">
+        Automate BI dashboards and optimized analytics pipelines that improved clinical reporting and enabled 40% faster, AI-driven decision support for healthcare clients and stakeholders.
+      </div>
+    </div>
+
+    <div class="exp-group">
+      <span class="role">Python Data Science Intern</span>
+      <span class="company">LogicArt Technologies</span>
+      <span class="dates">Jun 2022 – Dec 2022</span>
+      <div class="intern-point">
+        Build entire ETL with Python and Pandas, ensuring scalable data availability for machine learning initiatives.
+      </div>
+      <div class="intern-point">
+        Improved model accuracy through semi-supervised learning and robust data validation for ML applications.
+      </div>
+    </div>
+  </div>
 </body>
 </html>
