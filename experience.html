@@ -34,23 +34,17 @@
       display: block;
       transition: color 0.2s;
     }
-    header nav ul li a:hover {
-      color: #58a4ff;
-      border-bottom: 2px solid #58a4ff;
-    }
     header nav ul li a.active,
     header nav ul li a.nav-active {
       color: #58a4ff !important;
       border-bottom: 2px solid #58a4ff !important;
       font-weight: 700 !important;
     }
-    main {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 85vh;
-      padding-top: 48px;
+    header nav ul li a:hover {
+      color: #58a4ff;
+      border-bottom: 2px solid #58a4ff;
     }
+    main { display: flex; justify-content: center; align-items: flex-start; min-height: 85vh; padding-top: 48px; }
     .container {
       background: #fff;
       max-width: 1000px;
@@ -61,18 +55,13 @@
         0 1.5px 3.5px rgba(39, 59, 86, 0.04);
       padding: 3em 3em 2.5em 3em;
     }
-    h2 {
-      font-size: 2.1em;
-      margin-bottom: 1.2em;
-      letter-spacing: 0.5px;
-    }
-    .exp-group {
-      margin-bottom: 2.2em;
-    }
+    h2 { font-size: 2.1em; margin-bottom: 1.2em; letter-spacing: 0.5px; }
+    .exp-group { margin-bottom: 2.2em; }
     .role { font-weight: bold; font-size: 1.13em; color: #203a53; }
     .company { color: #2c406c; font-weight: 500; margin-left: 4px;}
     .dates, .loc { color: #7b8a97; font-size: 1em; margin-left: 6px;}
     .point, .intern-point { margin-left: 0; margin-top: 0.7em; font-size: 1.04em; line-height: 1.75; }
+    .extra-point { margin-left: 1.5em; margin-top: 0.5em; font-size: 1.03em; color: #295e7d; font-style: italic;}
     h3 { font-size: 1.15em; margin-top: 2em; margin-bottom: 0.3em; }
     .section-header { font-weight: bold; margin-top: 2em; color: #285b80; letter-spacing: 0.5px;}
     footer {
@@ -105,7 +94,6 @@
     </nav>
   </header>
   <script>
-    // Highlight "Experience" link when this page loads
     document.addEventListener("DOMContentLoaded", function() {
       var current = document.getElementById("nav-exp");
       if (current) current.classList.add("active", "nav-active");
@@ -125,6 +113,15 @@
         <div class="point">
           Applied QLoRA fine-tuning techniques to domain-specific large language models, orchestrating vector database retrieval, Kubernetes-based model serving, and automated agent architectures through CI/CD pipelines to drive significant accuracy improvements and ensure seamless, production-ready adoption of AI solutions for leading fintech and healthcare clients. Collaborated in Agile sprints with cross-functional teams.
         </div>
+        <div class="extra-point">
+          Led continuous deployment and monitoring for LLM-based applications using Azure OpenAI and GCP GKE, achieving 99.5% model uptime.
+        </div>
+        <div class="extra-point">
+          Developed asynchronous microservice architecture for real-time translation and voice synthesis in 150+ languages using TTS/STT APIs and custom transformers (GPT-4, LangChain, ElevenLabs).
+        </div>
+        <div class="extra-point">
+          Enhanced model evaluation workflows with distributed logging and automated metrics dashboards (Tableau, Power BI).
+        </div>
       </div>
       <div class="exp-group">
         <span class="role">ML Engineer - Healthcare AI</span>
@@ -137,6 +134,12 @@
         <div class="point">
           Designed automated ML pipelines and dashboards, reducing model deployment latency by 35% and delivering $2M+ in business impact through actionable healthcare analytics.
         </div>
+        <div class="extra-point">
+          Integrated model interpretability with SHAP/LIME for stakeholder explainability and regulatory transparency.
+        </div>
+        <div class="extra-point">
+          Automated clinical data preprocessing, feature engineering, and model hyperparameter search using distributed scikit-learn workflows.
+        </div>
       </div>
       <div class="exp-group">
         <span class="role">AI Finance Analyst</span>
@@ -147,6 +150,12 @@
         </div>
         <div class="point">
           Developed NLP sentiment analysis models to analyze financial datasets and inform investment strategies for clients including JPMorgan Chase, Goldman Sachs, NJ Group, and RIL (Reliance Industries Limited).
+        </div>
+        <div class="extra-point">
+          Built custom forecasting models for sales prediction with Time Series (ARIMA, Prophet) and supervised learning (XGBoost), increasing forecast accuracy by 18%.
+        </div>
+        <div class="extra-point">
+          Deployed Power BI and Tableau dashboards for C-level financial reporting and real-time performance tracking.
         </div>
       </div>
       <h3 class="section-header">Internship</h3>
@@ -160,6 +169,9 @@
         <div class="intern-point">
           Automate BI dashboards and optimized analytics pipelines that improved clinical reporting and enabled 40% faster, AI-driven decision support for healthcare clients and stakeholders.
         </div>
+        <div class="extra-point">
+          Implemented modular Python scripts for credentialed data extraction, reducing operational errors by 33%.
+        </div>
       </div>
       <div class="exp-group">
         <span class="role">Python Data Science Intern</span>
@@ -170,6 +182,9 @@
         </div>
         <div class="intern-point">
           Improved model accuracy through semi-supervised learning and robust data validation for ML applications.
+        </div>
+        <div class="extra-point">
+          Designed EDA reporting workflows boosting model selection speed and reproducibility.
         </div>
       </div>
     </div>
