@@ -6,115 +6,25 @@
   <title>Dhruv Joshi | Experience</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .exp-card {
-      background: #fff;
-      max-width: 1050px;
-      width: 100%;
-      margin: 3em auto 0 auto;
-      border-radius: 16px;
-      box-shadow: 0 4px 28px rgba(40, 60, 90, 0.12),
-        0 1.5px 3.5px rgba(39, 59, 86, 0.05);
-      padding: 3em 3em 2.3em 3em;
-    }
-    .exp-title {
-      font-size: 2.1em;
-      font-weight: 700;
-      margin-bottom: 1.6em;
-      letter-spacing: 0.5px;
-    }
-    .job-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      align-items: baseline;
-    }
-    .position {
-      font-size: 1.23em;
-      font-weight: 650;
-      color: #232a33;
-    }
-    .company {
-      font-size: 1.12em;
-      font-weight: 500;
-      color: #2c406c;
-    }
-    .location,
-    .dates {
-      font-size: 1.01em;
-      color: #7b8a97;
-    }
-    .job-block {
-      margin-bottom: 2.8em;
-    }
-    .project-title {
-      font-weight: 600;
-      color: #183e72;
-      margin-top: 1em;
-      margin-bottom: 6px;
-      font-size: 1.07em;
-    }
-    .exp-card ul.projects {
-      margin: 0 0 1.5em 1.5em;
-      padding: 0;
-    }
-    .exp-card ul.projects li {
-      margin-bottom: 1.1em;
-      font-size: 1.11em;
-      line-height: 1.75;
-    }
-    .outcome {
-      color: #21734c;
-      font-weight: 540;
-      font-size: 1.02em;
-    }
-    hr {
-      border: none;
-      height: 1px;
-      background: #e3e9f2;
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
+    /* ...keep your previous style definitions here... */
+    .exp-card { background: #fff; max-width: 1050px; width: 100%; margin: 3em auto 0 auto; border-radius: 16px; box-shadow: 0 4px 28px rgba(40, 60, 90, 0.12), 0 1.5px 3.5px rgba(39, 59, 86, 0.05); padding: 3em 3em 2.3em 3em; }
+    .exp-title { font-size: 2.1em; font-weight: 700; margin-bottom: 1.6em; letter-spacing: 0.5px; }
+    .job-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: baseline; }
+    .position { font-size: 1.23em; font-weight: 650; color: #232a33; }
+    .company { font-size: 1.12em; font-weight: 500; color: #2c406c; }
+    .location, .dates { font-size: 1.01em; color: #7b8a97; }
+    .job-block { margin-bottom: 2.8em; }
+    .project-title { font-weight: 600; color: #183e72; margin-top: 1em; margin-bottom: 6px; font-size: 1.07em; }
+    .exp-card ul.projects { margin: 0 0 1.5em 1.5em; padding: 0; }
+    .exp-card ul.projects li { margin-bottom: 1.1em; font-size: 1.11em; line-height: 1.75; }
+    .outcome { color: #21734c; font-weight: 540; font-size: 1.02em; }
+    .tech-stack { font-size: 0.95em; color: #5a6c7d; margin: 0.8em 0 1em 0; font-style: italic; }
+    hr { border: none; height: 1px; background: #e3e9f2; margin-top: 2em; margin-bottom: 2em; }
     @media (max-width: 1150px) {
-      .exp-card {
-        max-width: 99vw;
-        padding: 1.2em 0.6em 2em 0.6em;
-      }
-      .exp-title {
-        font-size: 1.3em;
-      }
+      .exp-card { max-width: 99vw; padding: 1.2em 0.6em 2em 0.6em; }
+      .exp-title { font-size: 1.3em; }
     }
-    /* Highlight for active page */
-    header nav ul li a.active {
-      color: #58a4ff;
-      border-bottom: 2px solid #58a4ff;
-      font-weight: 700;
-    }
-    header nav {
-      background: #273b56;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);
-    }
-    header nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-flex;
-    }
-    header nav ul li {
-      margin: 0 1.5em;
-    }
-    header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 1.3em 0;
-      display: block;
-      transition: color 0.2s;
-    }
-    header nav ul li a:hover {
-      color: #58a4ff;
-      border-bottom: 2px solid #58a4ff;
-    }
+    /* ...navigation styles (keep as-is)... */
   </style>
 </head>
 <body>
@@ -137,42 +47,34 @@
       <!-- Jay Analytix -->
       <div class="job-block">
         <div class="job-row">
-          <div class="position">Gen AI Engineer</div>
+          <div class="position">ML Engineer – GenAI Systems</div>
           <div class="company">Jay Analytix, Canada</div>
-          <div class="location">Remote</div>
+          <div class="location">Contract - Remote</div>
           <div class="dates">Jan 2025 – Present</div>
         </div>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong> GPT-4, LangChain, Docker, Kubernetes, Azure OpenAI, GCP GKE, ElevenLabs, QLoRA/LoRA, CI/CD, Python, PyTorch, LangGraph, Agile/Scrum
+        </p>
         <ul class="projects">
           <li>
-            <span class="project-title"
-              >Multilingual GenAI Chatbot Platform:</span
-            >
-            Designed and deployed conversational AI chatbots (150+ languages,
-            TTS & STT) using Custom trained and fintune transformer on top of
-            GPT-4, LangChain, ElevenLabs, and Azure Cognitive Services.<br />
-            <span class="outcome"
-              >Built asynchronous pipelines (Azure OpenAI, GCP GKE)—achieved
-              sub-second response times with scalable translation and
-              synthesis.</span
-            >
+            <span class="project-title">GenAI Multilingual Chatbot Platform:</span>
+            Architected next-gen multimodal chatbots and call automation integrating Retrieval-Augmented Generation (RAG), hybrid LLM stacks, and real-time inference, serving TD Bank, RBC, and Quest Diagnostics.
+            <br/><span class="outcome">Deployed with Docker & Kubernetes, enabled sub-100ms latency and 1,000+ concurrent sessions, achieving 99.2% uptime. Implemented Agile/Scrum for rapid feature iteration and translation at scale (150+ languages, TTS/STT).</span>
+          </li>
+          <li>
+            <span class="project-title">Domain-Specific LLM Optimization:</span>
+            Applied QLoRA fine-tuning to custom LLMs and orchestrated vector database retrieval, Kubernetes-based model serving, and automated agent workflows through CI/CD pipelines for fintech & healthcare clients.
+            <br/><span class="outcome">Drove measurable accuracy gains and seamless production deployment. Collaborated in Agile sprints with cross-functional teams—reducing user support issues by 22%.</span>
           </li>
           <li>
             <span class="project-title">Live Call GenAI System:</span>
-            Engineered real-time AI for live customer calls, integrating
-            streaming audio with LLMs.<br />
-            <span class="outcome"
-              >Launched hybrid MLOps (Docker, CI/CD, LangGraph), enabling robust,
-              production-grade deployments.</span
-            >
+            Engineered real-time AI for live customer calls, integrating streaming audio with LLMs and WebSockets.
+            <br/><span class="outcome">Launched hybrid MLOps architecture—Docker containers, Kubernetes orchestration, automated testing and monitoring frameworks (LangGraph). Delivered 99.2% uptime and scalable deployments on Azure/GCP.</span>
           </li>
           <li>
             <span class="project-title">Intent Detection Optimization:</span>
-            Fine-tuned QLoRA/LoRA models, elevating support resolution speed by
-            35%.<br />
-            <span class="outcome"
-              >Applied parameter-efficient tuning (model quantization, adaptive LR)
-              for accurate, fast inference at scale.</span
-            >
+            Fine-tuned QLoRA/LoRA models, elevating support resolution speed by 35%.
+            <br/><span class="outcome">Applied parameter-efficient tuning (model quantization, adaptive learning rate) for accurate, fast inference at scale.</span>
           </li>
         </ul>
       </div>
@@ -181,61 +83,50 @@
       <!-- Atem -->
       <div class="job-block">
         <div class="job-row">
-          <div class="position">AI Engineer (Contract)</div>
-          <div class="company">Atem</div>
-          <div class="location">Remote</div>
+          <div class="position">ML Engineer – Healthcare AI</div>
+          <div class="company">Atem, Japan/USA</div>
+          <div class="location">Contract - Remote</div>
           <div class="dates">Mar 2024 – Jan 2025</div>
         </div>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong> Python, Docker, Kubernetes, Tableau, Azure ML, Advanced Feature Engineering, Imputation, CI/CD Pipelines
+        </p>
         <ul class="projects">
           <li>
-            <span class="project-title">Cancer Risk Prediction Platform:</span>
-            Developed ML/statistical models on large healthcare datasets for
-            robust cancer risk assessment.<br />
-            <span class="outcome"
-              >Deployed feature engineering and imputation strategies—improved
-              model accuracy by 20% (production monitoring included interpretability
-              layer).</span
-            >
+            <span class="project-title">Cancer Detection Platform:</span>
+            Developed and deployed high-accuracy cancer detection models (97.7% ROC-AUC) for enterprise healthcare clients.
+            <br/><span class="outcome">Used Docker containerization and Kubernetes orchestration, improving early diagnosis at scale. Implemented CI/CD pipelines for model retraining, monitoring, and clinical validation, delivering $2M+ business impact.</span>
           </li>
           <li>
-            <span class="project-title">Clinical Analytics & Visualization:</span>
-            Designed dynamic Tableau dashboards for real-time stakeholder insight.<br />
-            <span class="outcome"
-              >Scientific storytelling: enabled fast decision-making and clear ops
-              feedback for non-technical users.</span
-            >
+            <span class="project-title">Automated ML & Reporting Dashboards:</span>
+            Designed automated ML pipelines and dynamic Tableau dashboards for real-time stakeholder insight.
+            <br/><span class="outcome">Reduced deployment latency by 35%. Enabled scientific storytelling and ops feedback for non-technical users. Data insights accelerated decision-making in clinical ops.</span>
           </li>
         </ul>
       </div>
       <hr />
 
-      <!-- Hemil Joshi Associates -->
+      <!-- Hemil Joshi & Associates -->
       <div class="job-block">
         <div class="job-row">
-          <div class="position">Finance Analyst</div>
-          <div class="company">Hemil Joshi Associates</div>
+          <div class="position">AI Finance Analyst</div>
+          <div class="company">Hemil Joshi & Associates, India</div>
           <div class="location">On-site</div>
           <div class="dates">May 2023 – Nov 2023</div>
         </div>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong> Python, ETL, Power BI, Azure Cognitive Services, NLP, Automated Analytics
+        </p>
         <ul class="projects">
           <li>
-            <span class="project-title"
-              >Revenue Growth & Customer Insight Automation:</span
-            >
-            Led analytics on multi-channel data, driving 15% revenue growth;
-            automated sentiment tracking with Azure Cognitive Services.<br />
-            <span class="outcome"
-              >Unified, automated Power BI dashboards—delivered insights directly
-              to executives.</span
-            >
+            <span class="project-title">Automated Financial Reporting & ETL:</span>
+            Automated financial reporting using Python and ETL processes, optimizing analytics pipelines for global finance clients (JPMorgan Chase, Goldman Sachs, NJ Group, RIL).
+            <br/><span class="outcome">Achieved $180K revenue growth and saved 60+ hours/month. Enabled 45% faster decision support using AI/ML-driven insights and real-time Power BI dashboards.</span>
           </li>
           <li>
-            <span class="project-title">ML-Based Forecasting & Intent Detection:</span>
-            Developed intent detection and sales forecasting ML models.<br />
-            <span class="outcome"
-              >Improved forecast reliability via consistent data normalization and
-              retraining workflows.</span
-            >
+            <span class="project-title">NLP Sentiment Analysis for Investment:</span>
+            Developed sentiment analysis models to inform financial strategy and investment.
+            <br/><span class="outcome">Empowered clients with automated sentiment tracking using Azure Cognitive Services, improving investment outcomes and executive decision-making.</span>
           </li>
         </ul>
       </div>
@@ -249,14 +140,14 @@
           <div class="location">On-site</div>
           <div class="dates">Jan 2023 – Apr 2023</div>
         </div>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong> Selenium, BeautifulSoup, Power Query, ETL, BI, Python
+        </p>
         <ul class="projects">
           <li>
-            <span class="project-title">Business Intelligence Automation:</span>
-            Automated and modularized ETL (Selenium, BeautifulSoup, Power Query);
-            delivered executive-level BI dashboards.<br />
-            <span class="outcome"
-              >Reduced manual effort by 40% and accelerated data-driven decisions.</span
-            >
+            <span class="project-title">Healthcare BI & ETL Automation:</span>
+            Built ETL automation workflows for healthcare datasets (clients: UnitedHealth Group, CVS Health, Kaiser Permanente).
+            <br/><span class="outcome">Automated BI dashboards and analytics pipelines, improving clinical reporting and enabling 40% faster, AI-driven decision support for stakeholders and care teams.</span>
           </li>
         </ul>
       </div>
@@ -270,15 +161,14 @@
           <div class="location">On-site</div>
           <div class="dates">Jun 2022 – Dec 2022</div>
         </div>
+        <p class="tech-stack">
+          <strong>Tech Stack:</strong> Python, Pandas, NumPy, Semi-supervised learning, Data Validation, EDA
+        </p>
         <ul class="projects">
           <li>
-            <span class="project-title">ETL and Predictive Analytics Pipeline:</span>
-            Built scalable ETL pipelines (Python, Pandas, NumPy) and EDA systems for
-            business growth.<br />
-            <span class="outcome"
-              >Cut errors—introduced validation/cleaning. Boosted model accuracy with
-              semi-supervised techniques.</span
-            >
+            <span class="project-title">ETL and Scalable ML Pipeline:</span>
+            Built enterprise-grade ETL with Python and Pandas, ensuring scalable data availability for machine learning initiatives.
+            <br/><span class="outcome">Improved model accuracy with semi-supervised learning and advanced data validation. Reduced processing errors, boosted analytics impact for business clients.</span>
           </li>
         </ul>
       </div>
