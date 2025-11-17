@@ -15,32 +15,9 @@
     .point, .intern-point { margin-left: 0; margin-top: 0.7em; font-size: 1.04em; line-height: 1.75; }
     h3 { font-size: 1.15em; margin-top: 2em; margin-bottom: 0.3em; }
     .section-header { font-weight: bold; margin-top: 2em; color: #285b80; letter-spacing: 0.5px;}
-    nav { background: #273b56; text-align: center; box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);}
-    nav ul { list-style: none; padding: 0; margin: 0; display: inline-flex; }
-    nav ul li { margin: 0 1.5em; }
-    nav ul li a { color: #fff; text-decoration: none; font-weight: 500; padding: 1.3em 0; display: block; transition: color 0.2s;}
-    nav ul li a.nav-active,
-    nav ul li a:hover { color: #58a4ff !important; border-bottom: 2px solid #58a4ff !important; font-weight: 700 !important;}
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" id="nav-intro">Introduction</a></li>
-        <li><a href="experience.html" id="nav-exp">Experience</a></li>
-        <li><a href="projects.html" id="nav-proj">Professional Projects</a></li>
-        <li><a href="knowledge.html" id="nav-knowl">Knowledge Roadmap</a></li>
-        <li><a href="certificates.html" id="nav-cert">Certificates & Workshops</a></li>
-      </ul>
-    </nav>
-  </header>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var current = document.getElementById("nav-exp");
-      if (current) current.classList.add("nav-active");
-    });
-  </script>
   <div class="container">
     <h2>Work Experience</h2>
     <div class="exp-group">
@@ -55,6 +32,7 @@
         Applied QLoRA fine-tuning techniques to domain-specific large language models, orchestrating vector database retrieval, Kubernetes-based model serving, and automated agent architectures through CI/CD pipelines to drive significant accuracy improvements and ensure seamless, production-ready adoption of AI solutions for leading fintech and healthcare clients. Collaborated in Agile sprints with cross-functional teams.
       </div>
     </div>
+
     <div class="exp-group">
       <span class="role">ML Engineer - Healthcare AI</span>
       <span class="company">Atem, Japan/USA</span>
@@ -67,6 +45,7 @@
         Designed automated ML pipelines and dashboards, reducing model deployment latency by 35% and delivering $2M+ in business impact through actionable healthcare analytics.
       </div>
     </div>
+
     <div class="exp-group">
       <span class="role">AI Finance Analyst</span>
       <span class="company">Hemil Joshi & Associates, India</span>
@@ -78,6 +57,7 @@
         Developed NLP sentiment analysis models to analyze financial datasets and inform investment strategies for clients including JPMorgan Chase, Goldman Sachs, NJ Group, and RIL (Reliance Industries Limited).
       </div>
     </div>
+
     <h3 class="section-header">Internship</h3>
     <div class="exp-group">
       <span class="role">Data Analyst Intern</span>
@@ -90,6 +70,7 @@
         Automate BI dashboards and optimized analytics pipelines that improved clinical reporting and enabled 40% faster, AI-driven decision support for healthcare clients and stakeholders.
       </div>
     </div>
+
     <div class="exp-group">
       <span class="role">Python Data Science Intern</span>
       <span class="company">LogicArt Technologies</span>
