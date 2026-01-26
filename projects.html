@@ -1,301 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dhruv Joshi | Professional Projects</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .projects-card {
-      background: #fff;
-      max-width: 1050px;
-      width: 100%;
-      margin: 3em auto 0 auto;
-      border-radius: 16px;
-      box-shadow: 0 4px 28px rgba(40, 60, 90, 0.13),
-        0 1.5px 3.5px rgba(39, 59, 86, 0.07);
-      padding: 3em 3em 2.3em 3em;
-    }
-    .projects-title {
-      font-size: 2em;
-      font-weight: 700;
-      margin-bottom: 1.4em;
-      letter-spacing: 0.5px;
-    }
-    .project-block {
-      margin-bottom: 2.5em;
-    }
-    .project-headline {
-      font-size: 1.19em;
-      font-weight: 700;
-      margin-bottom: 0.25em;
-      color: #1a366d;
-    }
-    .project-link {
-      font-size: 1.07em;
-      font-weight: 550;
-      color: #1654c1;
-      text-decoration: none;
-      margin-left: 5px;
-    }
-    .project-desc {
-      font-size: 1.13em;
-      line-height: 1.7;
-      margin-bottom: 0.6em;
-      color: #222;
-    }
-    .highlight {
-      font-weight: 600;
-      color: #2962bb;
-      margin-bottom: 0.2em;
-      display: block;
-    }
-    .project-list {
-      margin-left: 1.7em;
-      margin-bottom: 0.6em;
-    }
-    .tech-stack {
-      margin-top: 0.1em;
-      font-size: 1.02em;
-      color: #24786d;
-      font-weight: 600;
-    }
-    hr {
-      border: none;
-      height: 1px;
-      background: #e3e9f2;
-      margin-top: 2.2em;
-      margin-bottom: 2.2em;
-    }
-    @media (max-width: 1100px) {
-      .projects-card {
-        max-width: 99vw;
-        padding: 1.2em 0.6em 2em 0.6em;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=./#projects" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects – Dhruv Joshi</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #020617;
+        color: #e5e7eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
       }
-    }
-    header nav ul li a.active {
-      color: #58a4ff;
-      border-bottom: 2px solid #58a4ff;
-      font-weight: 700;
-    }
-    header nav {
-      background: #273b56;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);
-    }
-    header nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-flex;
-    }
-    header nav ul li {
-      margin: 0 1.5em;
-    }
-    header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 1.3em 0;
-      display: block;
-      transition: color 0.2s;
-    }
-    header nav ul li a:hover {
-      color: #58a4ff;
-      border-bottom: 2px solid #58a4ff;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Introduction</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html" class="active">Professional Projects</a></li>
-        <li><a href="knowledge.html">Knowledge Roadmap</a></li>
-        <li><a href="certificates.html">Certificates & Workshops</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="projects-card">
-      <div class="projects-title">Professional Projects</div>
-
-      <!-- voice_GPT -->
-      <div class="project-block">
-        <div class="project-headline">
-          voice_GPT <span style="color:#31b36c;font-size:.98em;">[GenAI, Conversational AI]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/voice_GPT" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Built a production-ready, voice-controlled chatbot using OpenAI GPT and browser speech recognition, enabling seamless voice-to-text and contextual multi-turn conversations in enterprise and educational settings. Demonstrated sub-second response latency and flexible user interface for both voice and text input.<br>
-          <strong>Impact:</strong> Rapid prototype for enterprise pilots; improved accessibility for AI-driven chat applications.
-        </div>
-        <span class="highlight">Problem:</span> Achieving real-time, multi-turn voice and text interaction.<br/>
-        <span class="highlight">Solution:</span> Integrated browser speech APIs and Python NLP pipelines for low-latency, enterprise-grade conversational UX.
-        <div class="tech-stack">Stack: Python, OpenAI GPT, transformers, SpeechRecognition, pyttsx3, Jupyter Notebook, JavaScript</div>
-      </div>
-      <hr />
-
-      <!-- Banana-Plant-Diseases -->
-      <div class="project-block">
-        <div class="project-headline">
-          Banana Plant Disease Classification <span style="color:#31b36c;font-size:.98em;">[Agriculture, Computer Vision]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/Banana-Plant-Diseases" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Implemented a deep transfer learning pipeline for early disease detection in bananas, supporting farmers and agri-tech partners. Achieved over 92% detection accuracy on field-validation sets.<br>
-          <strong>Impact:</strong> Pilots suggest potential 20%+ reduction in crop loss for partner farms.
-        </div>
-        <span class="highlight">Problem:</span> Limited, variable image data impacting accurate and scalable deployment.<br/>
-        <span class="highlight">Solution:</span> Robust augmentation and fine-tuned CNNs; automated web interface for non-technical usage.
-        <div class="tech-stack">Stack: Python, Keras, TensorFlow, OpenCV, Transfer Learning</div>
-      </div>
-      <hr />
-
-      <!-- Healthcare-AI -->
-      <div class="project-block">
-        <div class="project-headline">
-          Healthcare AI (Brain Tumor Detection) <span style="color:#31b36c;font-size:.98em;">[Healthcare, Medical Imaging]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/Healthcare-AI" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Developed a CNN-based pipeline for MRI brain tumor diagnostics, overcoming data imbalance and boosting clinical AI sensitivity/specificity by 15%. Model reached 95.7% diagnostic accuracy on 50,000+ patient records.<br>
-          <strong>Impact:</strong> Reduced diagnostic turnaround by 35%; improved clinical decision-making, adopted by radiology teams in pilot studies.
-        </div>
-        <span class="highlight">Problem:</span> Imbalanced, limited dataset for robust model training.<br/>
-        <span class="highlight">Solution:</span> Preprocessing, augmentation, advanced CNN architectures; GradCAM visualizations for clinical interpretability.
-        <div class="tech-stack">Stack: Python, TensorFlow, Keras, Medical Imaging, Data Augmentation</div>
-      </div>
-      <hr />
-
-      <!-- Natural_Language_Processing -->
-      <div class="project-block">
-        <div class="project-headline">
-          US Airline Sentiment Analysis <span style="color:#31b36c;font-size:.98em;">[NLP, Finance, Customer Analytics]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/Natural_Language_Processing" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Built a scalable NLP pipeline for airline Twitter sentiment analysis, enabling early detection of customer service pain points and driving social strategy improvements.<br>
-          <strong>Impact:</strong> Helped reduce negative sentiment by 12% within three months of dashboard adoption.
-        </div>
-        <span class="highlight">Problem:</span> Processing noisy, high-volume social data in real time.<br/>
-        <span class="highlight">Solution:</span> Layered text cleaning, ML models (SVM, Random Forest), cross-validation for sustained accuracy above 88%.
-        <div class="tech-stack">Stack: Python, NLTK, scikit-learn, Pandas, Jupyter Notebook</div>
-      </div>
-      <hr />
-
-      <!-- PyTorch-Capstone-Project -->
-      <div class="project-block">
-        <div class="project-headline">
-          PyTorch Capstone Project <span style="color:#31b36c;font-size:.98em;">[Deep Learning, Computer Vision]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/PyTorch-Capstone-Project" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Developed modular CNN architectures for CIFAR-10 image classification, improving accuracy benchmarks by 4% and enabling rapid retraining for new domains.<br>
-          <strong>Impact:</strong> Tools reused in capstone bootcamps, adopted for multiple academic initiatives.
-        </div>
-        <span class="highlight">Problem:</span> Preventing overfitting and model bloat during deep learning.<br/>
-        <span class="highlight">Solution:</span> Integrated advanced regularization (dropout, batch norm), extensive augmentation strategies.
-        <div class="tech-stack">Stack: Python, PyTorch, CNN, Computer Vision</div>
-      </div>
-      <hr />
-
-      <!-- CNN_VS_ANN -->
-      <div class="project-block">
-        <div class="project-headline">
-          CNN vs ANN Model Comparison <span style="color:#31b36c;font-size:.98em;">[Machine Learning]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/CNN_VS_ANN" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Compared CNN and ANN models for image classification, confirming CNNs’ superior accuracy and efficiency for vision tasks.
-        </div>
-        <span class="highlight">Problem:</span> Selecting optimal models for practical deployment.<br/>
-        <span class="highlight">Solution:</span> Benchmarked accuracy, training time, and resource use to guide future projects.
-        <div class="tech-stack">Stack: Python, TensorFlow, Keras, CIFAR-10</div>
-      </div>
-      <hr />
-
-      <!-- snake_game -->
-      <div class="project-block">
-        <div class="project-headline">
-          Snake Game <span style="color:#31b36c;font-size:.98em;">[Game Development]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/snake_game" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Created an interactive Snake game in Python with smooth GUI, responsive controls, and scalable architecture for teaching game logic.
-        </div>
-        <span class="highlight">Problem:</span> Designing continuous real-time gameplay.<br/>
-        <span class="highlight">Solution:</span> Used Pygame for modular event handling and dynamic scoring.
-        <div class="tech-stack">Stack: Python, Pygame</div>
-      </div>
-      <hr />
-
-      <!-- Web-Scraping -->
-      <div class="project-block">
-        <div class="project-headline">
-          Web Scraping iPhone Reviews <span style="color:#31b36c;font-size:.98em;">[Data Engineering]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/Web-Scraping" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Developed a dynamic scraper to extract real-time iPhone review and pricing data from Amazon, supporting competitor analytics and market trend analysis.
-        </div>
-        <span class="highlight">Problem:</span> Rapidly changing HTML and anti-bot countermeasures.<br/>
-        <span class="highlight">Solution:</span> Employed rotating user-agent, strategic delays, and error handling for robust automation.
-        <div class="tech-stack">Stack: Python, Requests, BeautifulSoup, Pandas</div>
-      </div>
-      <hr />
-
-      <!-- Eggplant -->
-      <div class="project-block">
-        <div class="project-headline">
-          Eggplant Disease Diagnosis <span style="color:#31b36c;font-size:.98em;">[Agriculture, Computer Vision]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/Eggplant" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Designed a transfer learning-based deep learning tool for eggplant disease classification, enabling actionable farmer interventions and reducing misdiagnosis by 30% in pilot trials.
-        </div>
-        <span class="highlight">Problem:</span> Maximizing disease classification accuracy with limited samples.<br/>
-        <span class="highlight">Solution:</span> Custom CNN architecture, field validation, and explainability integration.
-        <div class="tech-stack">Stack: Python, TensorFlow, CNN, Transfer Learning</div>
-      </div>
-      <hr />
-
-      <!-- visualization -->
-      <div class="project-block">
-        <div class="project-headline">
-          Data Visualization Toolkit <span style="color:#31b36c;font-size:.98em;">[Visualization, Data Science]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/visualization" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Developed reusable visualization tools for reporting and dashboarding, empowering non-technical teams to explore actionable insights from complex datasets.
-        </div>
-        <span class="highlight">Problem:</span> Enabling fast, flexible analytics for all users.<br/>
-        <span class="highlight">Solution:</span> Created modular APIs and templates using Matplotlib, Seaborn, Plotly.
-        <div class="tech-stack">Stack: Python, Matplotlib, Seaborn, Plotly, Pandas</div>
-      </div>
-      <hr />
-
-      <!-- Emotion-AI -->
-      <div class="project-block">
-        <div class="project-headline">
-          Emotion AI <span style="color:#31b36c;font-size:.98em;">[Computer Vision, HCI]</span>
-          <a class="project-link" href="https://github.com/Dhruv1603/Emotion-AI" target="_blank">[GitHub]</a>
-        </div>
-        <div class="project-desc">
-          Implemented vision-based emotion recognition using CNNs and live feedback to support interactive sentiment analysis for chatbots and user research.
-        </div>
-        <span class="highlight">Problem:</span> Detecting subtle, real-world emotions in variable conditions.<br/>
-        <span class="highlight">Solution:</span> Integrated OpenCV and advanced neural architectures for real-time results.
-        <div class="tech-stack">Stack: Python, OpenCV, Keras, CNN, React, Flask</div>
-      </div>
+      a {
+        color: #38bdf8;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .card {
+        max-width: 480px;
+        background: #020617;
+        border-radius: 1rem;
+        border: 1px solid rgba(148, 163, 184, 0.5);
+        padding: 1.5rem 1.75rem;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+      }
+      h1 {
+        font-size: 1.2rem;
+        margin: 0 0 0.5rem;
+      }
+      p {
+        margin: 0.25rem 0;
+        font-size: 0.9rem;
+      }
+    </style>
+    <script>
+      window.location.href = "./#projects";
+    </script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Redirecting to Projects</h1>
+      <p>You should be redirected automatically to my Projects section.</p>
+      <p>
+        If not, <a href="./#projects">click here to view my Projects</a>.
+      </p>
     </div>
-  </main>
-
-  <footer>
-    <p>©2025 Dhruv Joshi</p>
-  </footer>
-</body>
+  </body>
 </html>
