@@ -1,3 +1,7 @@
+// Always start at top on page load/refresh
+window.history.scrollRestoration = "manual";
+window.scrollTo(0, 0);
+
 // Mobile nav toggle
 const navToggle = document.getElementById("nav-toggle");
 const navLinks = document.getElementById("nav-links");
