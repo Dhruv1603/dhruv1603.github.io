@@ -1,130 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dhruv Joshi | Experience</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .exp-card { background: #fff; max-width: 1050px; width: 100%; margin: 3em auto 0 auto; border-radius: 16px; box-shadow: 0 4px 28px rgba(40, 60, 90, 0.12), 0 1.5px 3.5px rgba(39, 59, 86, 0.05); padding: 3em 3em 2.3em 3em; }
-    .exp-title { font-size: 2.1em; font-weight: 700; margin-bottom: 1.6em; letter-spacing: 0.5px; }
-    .job-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: baseline; }
-    .position { font-size: 1.23em; font-weight: 650; color: #232a33; }
-    .company { font-size: 1.12em; font-weight: 500; color: #2c406c; }
-    .location, .dates { font-size: 1.01em; color: #7b8a97; }
-    .job-block { margin-bottom: 2.8em; }
-    .project-title { font-weight: 600; color: #183e72; margin-top: 1em; margin-bottom: 6px; font-size: 1.07em; }
-    .exp-card ul.projects { margin: 0 0 1.5em 1.5em; padding: 0; }
-    .exp-card ul.projects li { margin-bottom: 1.1em; font-size: 1.11em; line-height: 1.75; }
-    .outcome { color: #21734c; font-weight: 540; font-size: 1.02em; }
-    .extra-point { color: #295e7d; font-style: italic; padding-left: 0.8em;}
-    hr { border: none; height: 1px; background: #e3e9f2; margin-top: 2em; margin-bottom: 2em; }
-    @media (max-width: 1150px) {
-      .exp-card { max-width: 99vw; padding: 1.2em 0.6em 2em 0.6em; }
-      .exp-title { font-size: 1.3em; }
-    }
-    header nav { background: #273b56; text-align: center; box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);}
-    header nav ul { list-style: none; padding: 0; margin: 0; display: inline-flex; }
-    header nav ul li { margin: 0 1.5em; }
-    header nav ul li a { color: #fff; text-decoration: none; font-weight: 500; padding: 1.3em 0; display: block; transition: color 0.2s;}
-    header nav ul li a.active { color: #58a4ff; border-bottom: 2px solid #58a4ff; font-weight: 700; }
-    header nav ul li a:hover { color: #58a4ff; border-bottom: 2px solid #58a4ff;}
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Introduction</a></li>
-        <li><a href="experience.html" class="active">Experience</a></li>
-        <li><a href="projects.html">Professional Projects</a></li>
-        <li><a href="knowledge.html">Knowledge Roadmap</a></li>
-        <li><a href="certificates.html">Certificates & Workshops</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="exp-card">
-      <div class="exp-title">Professional Experience</div>
-      <!-- Jay Analytix -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">ML Engineer – GenAI Systems</div>
-          <div class="company">Jay Analytix, Canada</div>
-          <div class="location">Contract - Remote</div>
-          <div class="dates">Jan 2025 – Present</div>
-        </div>
-        <ul class="projects">
-          <li>Architected next-gen multimodal GenAI chatbots and call automation solutions integrating Retrieval-Augmented Generation (RAG), hybrid LLM stacks, and real-time inference with Docker & Kubernetes orchestration, deployed for TD Bank, RBC, and Quest Diagnostics – enabling high-velocity support and AI-powered customer journeys at scale (sub-100ms latency, 1,000+ concurrent sessions, 99.2% uptime). Implemented Agile/Scrum workflows for rapid iteration.</li>
-          <li>Applied QLoRA fine-tuning techniques to domain-specific large language models, orchestrating vector database retrieval, Kubernetes-based model serving, and automated agent architectures through CI/CD pipelines to drive significant accuracy improvements and ensure seamless, production-ready adoption of AI solutions for leading fintech and healthcare clients. Collaborated in Agile sprints with cross-functional teams.</li>
-          <li class="extra-point">Built asynchronous microservices for rapid NLU/NLG in 150+ languages and developed auto-scaling endpoint monitoring with Prometheus and Grafana.</li>
-          <li class="extra-point">Integrated real-time speech-to-text/speech synthesis APIs (Azure, ElevenLabs) for enhanced conversational experience.</li>
-          <li class="extra-point">Introduced automated A/B testing pipelines for bot dialog strategies, increasing resolution rates by 13%.</li>
-        </ul>
-      </div>
-      <hr />
-      <!-- Atem -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">ML Engineer – Healthcare AI</div>
-          <div class="company">Atem, Japan/USA</div>
-          <div class="location">Contract - Remote</div>
-          <div class="dates">Mar 2024 – Jan 2025</div>
-        </div>
-        <ul class="projects">
-          <li>Developed and deployed high-accuracy cancer detection models (97.7% ROC-AUC) for enterprise healthcare clients using Docker containerization and Kubernetes orchestration, improving early diagnosis and supporting clinical decision-making at scale. Implemented CI/CD pipelines for automated model retraining and validation.</li>
-          <li>Designed automated ML pipelines and dashboards, reducing model deployment latency by 35% and delivering $2M+ in business impact through actionable healthcare analytics.</li>
-          <li class="extra-point">Introduced SHAP/LIME model explainability for clinical transparency and compliance.</li>
-          <li class="extra-point">Led the integration of synthetic data simulation (using GANs) to address class imbalance and enhance rare-cancer detection.</li>
-        </ul>
-      </div>
-      <hr />
-      <!-- Hemil Joshi & Associates -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">AI Finance Analyst</div>
-          <div class="company">Hemil Joshi & Associates, India</div>
-          <div class="location">On-site</div>
-          <div class="dates">May 2023 – Nov 2023</div>
-        </div>
-        <ul class="projects">
-          <li>Automated financial reporting workflows using Python and ETL processes, resulting in $180K revenue growth and saving 60+ hours per month. Optimized real-time analytics pipelines, enabling 45% faster decision support for global finance clients through AI/ML-driven insights.</li>
-          <li>Developed NLP sentiment analysis models to analyze financial datasets and inform investment strategies for clients including JPMorgan Chase, Goldman Sachs, NJ Group, and RIL (Reliance Industries Limited).</li>
-          <li class="extra-point">Built dashboard reporting solutions for C-level stakeholders with Power BI, supporting financial compliance and forecasting.</li>
-          <li class="extra-point">Led time series forecasting models (ARIMA/Prophet) to improve revenue planning accuracy.</li>
-        </ul>
-      </div>
-      <hr />
-      <!-- AaNeel Technology Solutions -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">Data Analyst Intern</div>
-          <div class="company">AaNeel Technology Solutions Pvt. Ltd., USA</div>
-          <div class="location">On-site</div>
-          <div class="dates">Jan 2023 – Apr 2023</div>
-        </div>
-        <ul class="projects">
-          <li>Build ETL automation workflows with tools like Selenium, BeautifulSoup (BS4) and Power Query for healthcare datasets used by clients including UnitedHealth Group, CVS Health, and Kaiser Permanente, supporting downstream AI/ML model development.</li>
-          <li>Automate BI dashboards and optimized analytics pipelines that improved clinical reporting and enabled 40% faster, AI-driven decision support for healthcare clients and stakeholders.</li>
-          <li class="extra-point">Reduced manual reporting errors by implementing dynamic validation rules and modular pipeline design.</li>
-        </ul>
-      </div>
-      <hr />
-      <!-- LogicArt Technologies -->
-      <div class="job-block">
-        <div class="job-row">
-          <div class="position">Python Data Science Intern</div>
-          <div class="company">LogicArt Technologies</div>
-          <div class="location">On-site</div>
-          <div class="dates">Jun 2022 – Dec 2022</div>
-        </div>
-        <ul class="projects">
-          <li>Build entire ETL with Python and Pandas, ensuring scalable data availability for machine learning initiatives.</li>
-          <li>Improved model accuracy through semi-supervised learning and robust data validation for ML applications.</li>
-          <li class="extra-point">Developed modular data cleaning modules, reducing data prep time for new ML projects.</li>
-        </ul>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=./#experience" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Experience – Dhruv Joshi</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #020617;
+        color: #e5e7eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      a {
+        color: #38bdf8;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .card {
+        max-width: 480px;
+        background: #020617;
+        border-radius: 1rem;
+        border: 1px solid rgba(148, 163, 184, 0.5);
+        padding: 1.5rem 1.75rem;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+      }
+      h1 {
+        font-size: 1.2rem;
+        margin: 0 0 0.5rem;
+      }
+      p {
+        margin: 0.25rem 0;
+        font-size: 0.9rem;
+      }
+    </style>
+    <script>
+      window.location.href = "./#experience";
+    </script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Redirecting to Experience</h1>
+      <p>You should be redirected automatically to my Experience section.</p>
+      <p>
+        If not, <a href="./#experience">click here to view my Experience</a>.
+      </p>
     </div>
-  </main>
-</body>
+  </body>
 </html>
