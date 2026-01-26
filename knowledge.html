@@ -1,290 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dhruv Joshi | Knowledge Roadmap</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background: #eef3fa;
-    }
-    .timeline-container {
-      max-width: 950px;
-      margin: 3em auto 2em auto;
-      padding: 0 16px;
-    }
-    .timeline-title {
-      font-size: 2em;
-      font-weight: 700;
-      color: #153260;
-      text-align: center;
-      margin-bottom: 2.1em;
-    }
-    .timeline {
-      position: relative;
-      margin: 0 auto;
-      padding: 2em 0;
-      width: 95%;
-    }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
-      width: 7px;
-      height: 100%;
-      background: linear-gradient(to bottom, #1e2d58 60%, #89b7ff 100%);
-      border-radius: 4px;
-    }
-    .milestone {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 3.1em;
-      position: relative;
-      width: 100%;
-    }
-    .milestone.left {
-      justify-content: flex-end;
-    }
-    .milestone.right {
-      justify-content: flex-start;
-    }
-    .milestone-content {
-      background: #fff;
-      border-radius: 13px;
-      box-shadow: 0 6px 24px rgba(44, 64, 108, 0.09);
-      padding: 1.4em 2em;
-      width: 410px;
-      margin: 0 32px;
-      position: relative;
-      z-index: 1;
-      border-left: 5px solid #4e77d4;
-    }
-    .milestone.right .milestone-content {
-      border-left: none;
-      border-right: 5px solid #75c5e9;
-    }
-    .milestone-year {
-      font-size: 1.23em;
-      font-weight: 700;
-      color: #3061a6;
-      margin-bottom: 0.7em;
-      letter-spacing: 1.2px;
-    }
-    .milestone-title {
-      font-size: 1.12em;
-      font-weight: 600;
-      color: #23345d;
-      margin-bottom: 0.4em;
-    }
-    .milestone-desc {
-      font-size: 1.03em;
-      color: #333;
-      margin-bottom: 0.2em;
-      line-height: 1.67;
-    }
-    .milestone.future .milestone-content {
-      border-left: 5px dashed #1fa566;
-      border-right: none;
-      background: #f7fff9;
-      box-shadow: 0 5px 18px rgba(39, 176, 113, 0.07);
-    }
-    .milestone.future .milestone-year {
-      color: #1fa566;
-    }
-    .milestone.future .milestone-title {
-      color: #138057;
-    }
-    @media (max-width: 950px) {
-      .timeline-container,
-      .timeline {
-        width: 100%;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=./#skills" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skills – Dhruv Joshi</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #020617;
+        color: #e5e7eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
       }
-    }
-    @media (max-width: 750px) {
-      .milestone-content {
-        width: 90%;
+      a {
+        color: #38bdf8;
+        text-decoration: none;
       }
-      .timeline::before {
-        left: 6px;
-        transform: none;
+      a:hover {
+        text-decoration: underline;
       }
-      .milestone {
-        flex-direction: column;
+      .card {
+        max-width: 480px;
+        background: #020617;
+        border-radius: 1rem;
+        border: 1px solid rgba(148, 163, 184, 0.5);
+        padding: 1.5rem 1.75rem;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
       }
-      .milestone-content {
-        margin: 1em 0;
+      h1 {
+        font-size: 1.2rem;
+        margin: 0 0 0.5rem;
       }
-    }
-    /* Highlight for active page */
-    header nav ul li a.active {
-      color: #58a4ff;
-      border-bottom: 2px solid #58a4ff;
-      font-weight: 700;
-    }
-    header nav {
-      background: #273b56;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(39, 59, 86, 0.03);
-    }
-    header nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-flex;
-    }
-    header nav ul li {
-      margin: 0 1.5em;
-    }
-    header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 1.3em 0;
-      display: block;
-      transition: color 0.2s;
-    }
-    header nav ul li a:hover {
-      color: #58a4ff;
-      border-bottom: 2px solid #58a4ff;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Introduction</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Professional Projects</a></li>
-        <li><a href="knowledge.html" class="active">Knowledge Roadmap</a></li>
-        <li><a href="certificates.html">Certificates & Workshops</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="timeline-container">
-      <div class="timeline-title">My Knowledge Roadmap</div>
-      <div class="timeline">
-
-        <!-- 2017: Data Analysis Exposure -->
-        <div class="milestone left">
-          <div class="milestone-content">
-            <div class="milestone-year">2017</div>
-            <div class="milestone-title">Introduction to Data Analysis & Digital Skills</div>
-            <div class="milestone-desc">
-              Began independent learning in data analysis, Excel basics, and foundational programming through online platforms and applied mini-projects.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2018: Data Tools and Exploration -->
-        <div class="milestone right">
-          <div class="milestone-content">
-            <div class="milestone-year">2018</div>
-            <div class="milestone-title">Growing Data Skills: Visualization & Databases</div>
-            <div class="milestone-desc">
-              Expanded knowledge in Excel, basic SQL, and introductory visualization; participated in beginner workshops for exploratory analysis.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2019: Started B.E. Computer Engineering -->
-        <div class="milestone left">
-          <div class="milestone-content">
-            <div class="milestone-year">2019</div>
-            <div class="milestone-title">Bachelor of Engineering — Computer Engineering</div>
-            <div class="milestone-desc">
-              Enrolled in B.E., Computer Engineering. Built foundations in mathematics, algorithms, software principles, and database design; first in-depth exposure to Python and applied coding.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2020: Certifications & Applied Learning -->
-        <div class="milestone right">
-          <div class="milestone-content">
-            <div class="milestone-year">2020</div>
-            <div class="milestone-title">Certification Milestones</div>
-            <div class="milestone-desc">
-              Completed certifications in Data Visualization, Cyber Security, Bug Bounty, and Facebook Security; constructed first applied ML and statistics projects in R/Python.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2021: Business Intelligence/Advanced Study -->
-        <div class="milestone left">
-          <div class="milestone-content">
-            <div class="milestone-year">2021</div>
-            <div class="milestone-title">Business Intelligence & Automation</div>
-            <div class="milestone-desc">
-              Built dashboards using Power BI and Tableau. Automated ETL workflows; started real-world NLP and analytics projects in academia and internships.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2022: Professional & Advanced ML -->
-        <div class="milestone right">
-          <div class="milestone-content">
-            <div class="milestone-year">2022</div>
-            <div class="milestone-title">Professional Experience & Advanced ML</div>
-            <div class="milestone-desc">
-              Data Science Intern, LogicArt Technologies: Constructed ETL pipelines, predictive ML models, and handled EDA/semi-supervised learning. Attended workshops in PLC/Excel and startup analytics.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2023: Advanced AI & Cloud -->
-        <div class="milestone left">
-          <div class="milestone-content">
-            <div class="milestone-year">2023</div>
-            <div class="milestone-title">Cloud, NLP, and Analytics in Industry</div>
-            <div class="milestone-desc">
-              Worked at Hemil Joshi Associates: Automated BI/NLP analytics on Azure, led customer analytics; earned certifications in Google AI, ML, and Microsoft Azure.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2024: Postgraduate & Scalable AI -->
-        <div class="milestone right">
-          <div class="milestone-content">
-            <div class="milestone-year">2024</div>
-            <div class="milestone-title">Postgraduate in AI & ML</div>
-            <div class="milestone-desc">
-              Graduated Fanshawe College, Canada (CGPA 4.01/4.20). Focused on NLP, deep learning, large-scale MLOps, cloud AI deployment, and led major production AI/healthcare/chatbot projects.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2025: LLMs/Leadership -->
-        <div class="milestone left">
-          <div class="milestone-content">
-            <div class="milestone-year">2025</div>
-            <div class="milestone-title">GenAI, LLMs, and Leadership</div>
-            <div class="milestone-desc">
-              Gen AI Engineer, Jay Analytix: Built/deployed multilingual GPT-4 chatbots, intent detection, and hybrid MLOps solutions at enterprise scale; active in generative AI research and product leadership.
-            </div>
-          </div>
-        </div>
-
-        <!-- More to go -->
-        <div class="milestone right future">
-          <div class="milestone-content">
-            <div class="milestone-year">Future</div>
-            <div class="milestone-title">More to Come – The Journey Continues</div>
-            <div class="milestone-desc">
-              Relentless about growth, innovation, and impact—continually exploring breakthroughs in generative AI, self-supervised learning, cloud-native architectures, and building products that matter. Forever learning, always contributing, never settling for average.
-            </div>
-          </div>
-        </div>
-
-      </div>
+      p {
+        margin: 0.25rem 0;
+        font-size: 0.9rem;
+      }
+    </style>
+    <script>
+      window.location.href = "./#skills";
+    </script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Redirecting to Skills</h1>
+      <p>You should be redirected automatically to my Skills & Stack section.</p>
+      <p>
+        If not, <a href="./#skills">click here to view my Skills</a>.
+      </p>
     </div>
-  </main>
-  <footer>
-    <p>©2025 Dhruv Joshi</p>
-  </footer>
-</body>
+  </body>
 </html>
