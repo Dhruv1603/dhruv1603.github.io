@@ -105,25 +105,27 @@
             </div>
             <div class="timeline-content">
               <ul>
-                <li>Architected and delivered a multilingual AI frontdesk platform that automates inbound/outbound calls and chat for booking, cancelling, rescheduling, and updating appointments across enterprise healthcare and financial clients.</li>
-                <li>Designed a modular LLM/RAG pipeline combining fine-tuned LLMs, domain-specific knowledge bases, and intent/entity models to handle FAQs, complex inquiries, complaint logging, and admin workflows with high accuracy.</li>
-                <li>Built scalable voice and chat APIs (FastAPI + Docker + GKE) with real-time speech recognition and text generation, enabling the system to handle 1,000+ concurrent sessions with sub-100ms latency and 99.2% uptime.</li>
-                <li>Implemented MLOps on GCP and Vertex AI with GitHub Actions CI/CD, automating training, deployment, and rollback for multiple conversation, routing, and ranking models across environments.</li>
-                <li>Deployed and monitored services with centralized logging, metrics, and alerting (Prometheus/Grafana + cloud logging), reducing incident detection and resolution times for production issues.</li>
-                <li>Standardized experiment tracking and model governance using MLflow, versioned datasets, and registries, enabling reproducible experiments and faster iteration on new model variants.</li>
-                <li>Collaborated with product, operations, and client stakeholders to define success metrics (containment rate, call deflection, booking conversion), and continuously tuned flows to improve automation coverage and user experience.</li>
+                <li>Architected an ML‑powered legal and business document automation platform that ingests multi‑domain, multilingual contracts (PDF/DOCX), reads and understands them end‑to‑end, and delivers real‑time clause extraction, risk analysis, and review summaries for law firms.</li>
+                <li>Built a robust ingestion pipeline with OCR, semantic chunking, and structural parsing to normalize long, complex documents, enabling accurate downstream clause detection and metadata extraction across jurisdictions and languages.</li>
+                <li>Fine‑tuned transformer‑based LLMs and domain‑specific legal models for clause classification, obligation extraction, and anomaly detection, iterating for weeks to reach ~99% accuracy under strict law‑firm quality requirements.</li>
+                <li>Implemented a hybrid risk‑scoring engine combining embedding‑based similarity search, rule‑based checks, and RAG over approved templates and historical documents, surfacing high‑risk clauses and deviations automatically.</li>
+                <li>Designed scalable retrieval and reasoning pipelines using chunk‑and‑aggregate strategies, vector databases, and context‑aware retrieval to support very long, multilingual documents without losing global context.</li>
+                <li>Productionized the platform using FastAPI, Docker, and Kubernetes on GCP (Vertex AI), with CI/CD pipelines, monitoring, and logging, exposing APIs that integrate seamlessly into existing legal and business workflows and significantly reducing manual contract review time.</li>
+                <li>Initiated development of a secure, firm‑specific legal copilot chatbot that unifies these services behind a conversational interface (LLM + RAG), enabling lawyers and business users to query contracts, templates, and precedents in natural language.</li>
               </ul>
               <div class="tag-row">
                 <span class="tag">LLMs</span>
                 <span class="tag">RAG</span>
+                <span class="tag">Legal NLP</span>
                 <span class="tag">Multilingual NLP</span>
+                <span class="tag">Transformers</span>
+                <span class="tag">Vector Databases</span>
                 <span class="tag">FastAPI</span>
                 <span class="tag">Docker</span>
                 <span class="tag">Kubernetes (GKE)</span>
                 <span class="tag">GCP</span>
                 <span class="tag">Vertex AI</span>
-                <span class="tag">MLflow</span>
-                <span class="tag">GitHub Actions</span>
+                <span class="tag">CI/CD</span>
                 <span class="tag">MLOps</span>
               </div>
             </div>
