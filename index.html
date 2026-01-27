@@ -308,70 +308,288 @@
       <div class="container">
         <div class="section-header">
           <h2>Selected Projects</h2>
-          <p>Projects that showcase how I design, build, and ship production-grade ML, GenAI, and MLOps systems.[file:98]</p>
+          <p>Projects that showcase how I design, build, and ship production-grade ML, GenAI, and MLOps systems. <a href="https://github.com/Dhruv1603">GitHub</a></p>
         </div>
 
         <div class="cards-grid">
           <!-- Project 1 -->
           <article class="card">
-            <h3>Production Cancer Detection Pipeline</h3>
-            <p class="card-meta">Computer Vision · Healthcare · Deep Learning</p>
+            <h3>VoiceGPT – Interactive Voice & Text AI Assistant</h3>
+            <p class="card-meta">GenAI · Speech Recognition · Transformers</p>
             <p>
-              End-to-end cancer detection system using CNNs, deployed into a production clinical workflow, achieving 97.7% ROC-AUC with monitoring and evaluation on real-world data.[file:98]
+              Interactive voice-to-text and AI response system built in Google Colab that lets users talk to an LLM using their microphone or type prompts directly. It combines browser speech recognition with a GPT‑2 text generation pipeline for dynamic, conversational responses.
             </p>
             <ul class="card-list">
-              <li>Data preprocessing, augmentation, and training on large-scale medical imaging datasets.[file:98]</li>
-              <li>Deployed as an API with logging, dashboards, and alerts for performance and drift.[file:98]</li>
-              <li>Enabled clinicians to review predictions and metrics in a clear, interpretable interface.[file:98]</li>
+              <li>Integrated browser-based speech recognition via JavaScript to capture and transcribe spoken input into text in real time.</li>
+              <li>Used the <code>transformers</code> library to load and run GPT‑2, generating coherent responses conditioned on either transcribed speech or manually entered text.</li>
+              <li>Designed a Colab-backed web UI with buttons for recording, text input, and response generation, providing clear visual feedback and a smooth, interactive user experience.</li>
             </ul>
             <div class="tag-row">
-              <span class="tag">PyTorch</span>
-              <span class="tag">Computer Vision</span>
-              <span class="tag">MLOps</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">GPT-2</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">Speech Recognition</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Google Colab</span>
             </div>
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603/voice_GPT" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </p>
           </article>
 
           <!-- Project 2 -->
           <article class="card">
-            <h3>GenAI Knowledge Assistant (RAG)</h3>
-            <p class="card-meta">LLMs · RAG · Vector Search</p>
+            <h3>Banana Plant Disease Detection</h3>
+            <p class="card-meta">Computer Vision · Transfer Learning · ResNet101</p>
             <p>
-              Retrieval-augmented generation assistant answering domain-specific questions over PDFs, docs, and internal knowledge with grounded, low-latency responses.[file:98]
+              End-to-end image classification system that detects and classifies major banana leaf diseases
+              (Cordana, Sigatoka, Pestalotiopsis, and healthy) using deep learning and transfer learning on ResNet101,
+              supporting early intervention and yield optimisation for farmers.
             </p>
             <ul class="card-list">
-              <li>Implemented document ingestion, chunking, embeddings, and vector search with semantic reranking.[file:98]</li>
-              <li>Designed prompts and guardrails for safe, on-topic answers with evaluation pipelines.[file:98]</li>
-              <li>Shipped as a web app with authentication and usage analytics.[file:98]</li>
+              <li>Curated and organised a multi-class image dataset of banana leaves into train/test splits, covering healthy and diseased classes for robust generalisation to unseen images.</li>
+              <li>Implemented a preprocessing pipeline with normalization, label encoding, tensor conversion, and extensive data augmentation to improve robustness and reduce overfitting.</li>
+              <li>Fine-tuned a pre-trained ResNet101 backbone with custom dense layers (GAP → 64 → 128 → 512 → 1024 → 4-class softmax) using Adam and sparse categorical cross-entropy.</li>
+              <li>Achieved ~92% test accuracy with clear training curves (accuracy and loss), demonstrating strong performance on real-world banana disease images.</li>
+              <li>Saved the trained model and evaluation workflow for reuse, enabling practical deployment in agricultural decision-support tools.</li>
             </ul>
             <div class="tag-row">
-              <span class="tag">OpenAI / Llama</span>
-              <span class="tag">LangChain</span>
-              <span class="tag">Vector DB</span>
+              <span class="tag">ResNet101</span>
+              <span class="tag">Transfer Learning</span>
+              <span class="tag">TensorFlow / Keras</span>
+              <span class="tag">Image Classification</span>
+              <span class="tag">Data Augmentation</span>
+              <span class="tag">Agriculture AI</span>
             </div>
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603/Banana-Plant-Diseases" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </p>
           </article>
 
           <!-- Project 3 -->
           <article class="card">
-            <h3>VoiceGPT – Voice-First Chatbot</h3>
-            <p class="card-meta">GenAI · Speech · Frontend</p>
+            <h3>Healthcare AI – Brain Tumor Detection from MRI</h3>
+            <p class="card-meta">Medical Imaging · ResNet50 · Tumor Detection</p>
             <p>
-              Voice-enabled conversational assistant combining browser speech APIs with LLMs to support hands-free, multi-turn conversations across devices.[file:98]
+              Deep learning system that reads brain MRI scans and predicts whether a tumor is present,
+              using ResNet50-based transfer learning on TCIA/TCGA lower-grade glioma data with expert
+              segmentation masks as ground truth.
             </p>
             <ul class="card-list">
-              <li>Streaming speech-to-text, LLM responses, and optional text-to-speech for replies.[file:98]</li>
-              <li>Session memory and context handling for higher-quality conversations.[file:98]</li>
-              <li>Responsive UI optimized for both mobile and desktop users.[file:98]</li>
+              <li>Worked with 3,900+ MRI scans and corresponding FLAIR segmentation masks from TCIA/TCGA,
+                  linking imaging with tumor genomics and patient outcome data for radiogenomics analysis.</li>
+              <li>Built a preprocessing pipeline using <code>ImageDataGenerator</code> to normalize pixel values, resize images
+                  to 256×256, create train/validation/test splits, and stream batches efficiently for GPU training.</li>
+              <li>Used ResNet50 (ImageNet weights) as a frozen feature extractor and added a custom classification head
+                  with global average pooling, dense layers with ReLU + dropout, and a 2‑class softmax layer for
+                  tumor vs. no‑tumor classification.</li>
+              <li>Applied a two‑phase training strategy: first training only the head, then unfreezing the last ResNet50
+                  blocks with a lower learning rate for fine‑tuning, monitored by early stopping and model checkpoints.</li>
+              <li>Achieved strong performance with training accuracy above 85% and steadily improving validation
+                  accuracy and loss, indicating good generalisation on unseen MRI scans.</li>
             </ul>
             <div class="tag-row">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Web APIs</span>
-              <span class="tag">LLMs</span>
+              <span class="tag">ResNet50</span>
+              <span class="tag">Transfer Learning</span>
+              <span class="tag">Medical Imaging</span>
+              <span class="tag">Brain Tumor Detection</span>
+              <span class="tag">TensorFlow / Keras</span>
+              <span class="tag">ImageDataGenerator</span>
+            </div>
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603/Healthcare-AI" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </p>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card">
+            <h3>US Airline Sentiment Analysis</h3>
+            <p class="card-meta">NLP · Text Classification · Autoencoders + Logistic Regression</p>
+            <p>
+              End-to-end sentiment analysis system on the “Twitter US Airlines Sentiment” dataset (~14k tweets),
+              classifying customer feedback toward US airlines as positive, neutral, or negative to gauge service quality
+              and pain points.
+            </p>
+            <ul class="card-list">
+              <li>Cleaned raw tweets by removing URLs, mentions, hashtags, special characters, and extra whitespace, then normalised text (lowercasing) and applied SpaCy-based tokenisation, lemmatisation, and stopword removal.</li>
+              <li>Converted processed tweets into Bag‑of‑Words (BoW) features and trained a baseline Logistic Regression classifier, reaching ~76% validation accuracy and ~74% test accuracy.</li>
+              <li>Experimented with autoencoder architectures on BoW features to detect and remove anomalous / noisy samples via reconstruction error, then retrained Logistic Regression on the cleaned data to improve robustness.</li>
+              <li>Explored Random Forest classifiers as an alternative model, benchmarking validation and test accuracy and comparing performance and generalisation against the regularised Logistic Regression baseline.</li>
+              <li>Tuned L2 regularisation strengths, hidden layer sizes, activations, and dropout within the autoencoder‑plus‑LogReg pipeline to maximise validation accuracy and improve generalisation on unseen tweets.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">NLP</span>
+              <span class="tag">Sentiment Analysis</span>
+              <span class="tag">Logistic Regression</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">Autoencoders</span>
+              <span class="tag">SpaCy</span>
+              <span class="tag">Scikit-learn</span>
+            </div>
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603/Natural_Language_Processing" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </p>
+          </article>
+          
+          <!-- Project 5 -->
+          <article class="card">
+            <h3>CNN vs ANN – CIFAR‑10 Image Classification</h3>
+            <p class="card-meta">Deep Learning · CNN vs ANN · CIFAR‑10</p>
+            <p>
+              Comparative study of Convolutional Neural Networks (CNNs) and standard Artificial Neural Networks (ANNs)
+              on the CIFAR‑10 image dataset, demonstrating why CNNs are better suited for image classification by
+              learning hierarchical spatial features.
+            </p>
+            <ul class="card-list">
+              <li>Implemented a CNN with stacked Conv2D–BatchNorm–MaxPool blocks (32→64→128 filters), dropout, and a 512‑unit dense layer, ending in a 10‑class softmax classifier.</li>
+              <li>Built a baseline ANN with only fully connected layers (Flatten → 32 → 64 → 128 → 512 → 10) on raw pixel inputs to highlight the limitations of non‑convolutional architectures for images.</li>
+              <li>Trained both models on CIFAR‑10 and compared training/validation accuracy and loss curves across epochs, showing CNNs achieve higher validation accuracy and lower loss with better generalisation.</li>
+              <li>Used batch normalisation and dropout in the CNN to stabilise training and reduce overfitting, improving robustness versus the simpler ANN baseline.</li>
+              <li>Visualised results and sample predictions (e.g., cat vs dog) to make the performance gap between CNN and ANN interpretable for non‑experts.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">CNN</span>
+              <span class="tag">ANN</span>
+              <span class="tag">CIFAR‑10</span>
+              <span class="tag">TensorFlow / Keras</span>
+              <span class="tag">Batch Normalization</span>
+              <span class="tag">Dropout</span>
+              <span class="tag">Image Classification</span>
+            </div>
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603/CNN_VS_ANN" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </p>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="card">
+            <h3>Amazon iPhone Price & Review Scraper</h3>
+            <p class="card-meta">Python · Web Scraping · Data Visualization</p>
+            <p>
+              Python web scraping pipeline that extracts iPhone product names, prices, review counts, and product
+              links from Amazon search results using <code>requests</code>, <code>BeautifulSoup</code>, and <code>pandas</code>, then exports
+              the dataset to Excel and visualizes price–review trade-offs for iPhone 15 models.
+            </p>
+          
+            <ul class="card-list">
+              <li>Inspected Amazon’s HTML structure (developer tools, <code>data-asin</code> blocks, title and price spans) to reliably locate product containers and the nested elements containing names, prices, reviews, and links.</li>
+              <li>Implemented a <code>scrape_amazon_page(url)</code> function that sends an HTTP GET request with browser-like headers, parses the HTML via BeautifulSoup, and extracts structured lists of names, prices, reviews, and relative links.</li>
+              <li>Hardened parsing logic with null‑safe checks and sensible fallbacks (e.g., <code>"Not Found"</code>) when expected elements are missing or layout slightly changes, improving robustness to minor DOM shifts.</li>
+              <li>Built a pagination loop that iterates over result pages, calls <code>scrape_amazon_page</code> for each URL variant, appends results to global lists, stops when no more products are found, and sleeps between requests to be polite to the server.</li>
+              <li>Loaded all scraped data into a pandas <code>DataFrame</code> and saved it as <code>iphones.xlsx</code> for analysis and sharing, then used Plotly to create an interactive scatter plot of Price vs Reviews with product name coloring and link hover‑tooltips.</li>
+            </ul>
+          
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Requests</span>
+              <span class="tag">BeautifulSoup</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Plotly</span>
+              <span class="tag">Web Scraping</span>
+              <span class="tag">Data Engineering</span>
+            </div>
+          
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603" target="_blank" rel="noreferrer">View related code on GitHub →</a>
+            </p>
+          </article>
+
+          <!-- Project 7 -->
+          <article class="card">
+            <h3>Eggplant Leaf Disease Recognition (Farmer‑Assist AI)</h3>
+            <p class="card-meta">Computer Vision · CNN · Plant Pathology</p>
+            <p>
+              Deep learning system that classifies eggplant leaf images into seven disease classes (including healthy)
+              using a custom CNN on the “Eggplant Disease Recognition” dataset, to help farmers choose the right
+              treatment early.
+            </p>
+          
+            <ul class="card-list">
+              <li>Used the Kaggle Eggplant Disease Recognition dataset (392 images, 7 classes: Healthy Leaf, Insect Pest, Leaf Spot, Mosaic Virus, Small Leaf, White Mold, Wilt) and loaded it via <code>image_dataset_from_directory</code> at 512×512 resolution.</li>
+              <li>Built a TensorFlow <code>tf.data</code> pipeline with shuffling, train/val/test split, caching, and prefetching for efficient GPU training on Colab (T4), plus normalization via a <code>Rescaling(1./255)</code> layer and on‑the‑fly augmentation (random flips and rotations).</li>
+              <li>Designed a custom CNN: stacked Conv2D–MaxPool blocks (32→64→128→128→128→64 filters), followed by Flatten, a 512‑unit dense layer with ReLU and 0.5 dropout, and a final softmax layer over 7 disease classes.</li>
+              <li>Trained for 50 epochs with Adam and sparse categorical cross‑entropy, reaching ~81–82% test accuracy (loss ≈ 0.39) on held‑out data, with steadily improving train/validation curves after epoch ~20.</li>
+              <li>Saved the best performing model versions to disk (<code>models/&lt;version&gt;.h5</code>) for deployment in farmer‑facing tools (e.g., mobile or web apps) that can detect disease from a single leaf photo.</li>
+            </ul>
+          
+            <div class="tag-row">
+              <span class="tag">CNN</span>
+              <span class="tag">TensorFlow / Keras</span>
+              <span class="tag">Image Classification</span>
+              <span class="tag">Plant Disease</span>
+              <span class="tag">Data Augmentation</span>
+              <span class="tag">Agriculture AI</span>
+            </div>
+          
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603/Eggplant" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </p>
+          </article>
+
+          <!-- Project 8 -->
+          <article class="card">
+            <h3>Python Visualization – Matplotlib vs Seaborn vs Plotly</h3>
+            <p class="card-meta">Data Visualization · Statistical Graphics · Interactive Dashboards</p>
+            <p>
+              Comparative visualization project using the Iris dataset to showcase how Matplotlib, Seaborn, and Plotly differ in API, defaults, and interactivity when building pair plots, scatter plots, and histograms.
+            </p>
+          
+            <ul class="card-list">
+              <li>Used the Iris dataset and created the same core visuals (pair plot, sepal-length vs sepal-width scatter, petal-length histogram by species) across all three libraries for an apples‑to‑apples comparison.</li>
+              <li>With Matplotlib, built plots from low‑level primitives to highlight fine‑grained control over axes, legends, colors, and layout at the cost of more verbose code.</li>
+              <li>Leveraged Seaborn’s higher‑level APIs (e.g., pairplot, scatterplot, histplot) and built‑in themes to produce cleaner statistical graphics with minimal code, tightly integrated with pandas DataFrames.</li>
+              <li>Re‑implemented the same visuals in Plotly to produce fully interactive charts (hover tooltips, zoom, pan) suitable for web dashboards and embedded analytics.</li>
+              <li>Summarized trade‑offs: Matplotlib for maximum customization, Seaborn for fast & beautiful statistical plots, and Plotly for rich interactive visualizations in modern data apps.</li>
+            </ul>
+          
+            <div class="tag-row">
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">Plotly</span>
+              <span class="tag">Iris Dataset</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Python</span>
+            </div>
+          
+            <p style="margin-top:0.6rem;font-size:0.82rem;">
+              <a href="https://github.com/Dhruv1603/visualization" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </p>
+          </article>
+
+          <!-- Project 9 -->
+          <article class="card">
+            <h3>Emotion AI – Facial Keypoints & Expression Recognition</h3>
+            <p class="card-meta">Computer Vision · CNN + ResBlocks · Multi‑task Emotion AI</p>
+            <p>
+              Two‑stage Emotion AI system that first predicts dense facial keypoints from grayscale face images and then classifies facial expressions (angry, disgust, sad, happy, surprise) using CNNs with residual blocks on Kaggle datasets.
+            </p>
+          
+            <ul class="card-list">
+              <li>Part 1: Built a deep CNN with custom ResBlocks for facial keypoint detection, including image preprocessing (resize, normalization, noise reduction), augmentation, and training on a Kaggle facial keypoints dataset.</li>
+              <li>Implemented ResBlock architecture with convolution blocks and identity shortcuts (Conv2D → BatchNorm → ReLU, 3×3 kernels, max pooling, average pooling, and dense layers with dropout) to stabilize gradients and learn robust facial landmarks.</li>
+              <li>Visualized random faces with 30 keypoints overlaid using matplotlib to qualitatively validate landmark predictions before feeding them into downstream emotion models.</li>
+              <li>Part 2: Trained a CNN‑ResBlock classifier on an emotion dataset (5 classes: 0=Angry, 1=Disgust, 2=Sad, 3=Happy, 4=Surprise), including targeted augmentation to handle class imbalance for the low‑frequency “Disgust” class.</li>
+              <li>Combined both models into an end‑to‑end Emotion AI pipeline where the keypoint detector supports more accurate and stable facial expression classification, illustrating real‑world applications in healthcare, retail, education, in‑car monitoring, and AR.</li>
+            </ul>
+          
+            <div class="tag-row">
+              <span class="tag">Emotion AI</span>
+              <span class="tag">Facial Keypoints</span>
+              <span class="tag">CNN</span>
+              <span class="tag">Residual Blocks</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Affective Computing</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
+    <br>
+    <div class="section-separator"></div>
+    <br>
+    
     <!-- Skills Section -->
     <section class="section" id="skills">
       <div class="container">
