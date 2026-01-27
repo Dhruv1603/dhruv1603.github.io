@@ -166,22 +166,30 @@
           <!-- Experience 2: AI / ML Engineer – Cancer Detection -->
           <article class="timeline-item">
             <div class="timeline-meta">
-              <h3>AI Engineer – Cancer Detection</h3>
+              <h3>AI Engineer</h3>
               <p class="timeline-company">ATEM [Japan, USA] · Remote</p>
-              <p class="timeline-dates">2022 – 2024</p>
+              <p class="timeline-dates">Mar 2024 – Jan 2025</p>
             </div>
             <div class="timeline-content">
               <ul>
-                <li>Developed and deployed CNN-based cancer detection models on real-world histopathology/medical imaging data, achieving 97.7% ROC-AUC in production.[file:98]</li>
-                <li>Implemented robust data preprocessing, augmentation, and evaluation pipelines, including cross-validation, calibration, and monitoring for distribution shifts.[file:98]</li>
-                <li>Integrated the model into a clinical workflow with APIs and dashboards, enabling clinicians to review predictions, confidence scores, and performance metrics.[file:98]</li>
+                <li>Designed a multi‑stage cancer detection pipeline using CNN‑based models where early stages perform binary screening (sigmoid) and later stages perform multi‑class grading (softmax) to classify cancer type, severity, and progression over time.</li>
+                <li>Built an end‑to‑end system that ingests histopathology and medical imaging data, applies OCR and semantic/region‑based chunking, and feeds structured tensors into specialized models for presence detection, staging, and damage estimation.</li>
+                <li>Achieved 97.7% ROC‑AUC in production by combining rigorous data preprocessing, augmentation, cross‑validation, calibration, and continuous monitoring for distribution shift and performance drift.</li>
+                <li>Linked the models into a sequential, LLM‑assisted decision framework that can answer clinician queries and explain predictions by referencing both image‑based features and historical patient/context data.</li>
+                <li>Implemented a hybrid risk‑scoring engine that aggregates outputs from multiple models into interpretable risk categories and recommended next actions (follow‑up imaging, biopsy, treatment escalation), aligned with clinical guidelines.</li>
+                <li>Productionized the pipeline using Python, PyTorch/TensorFlow, FastAPI, and containerized services on AWS/GCP with Kubernetes, enabling low‑latency inference and reliable integration into existing clinical systems.</li>
+                <li>Exposed results through dashboards and APIs that surface predictions, confidence intervals, trend plots, and quality metrics, giving clinicians an end‑to‑end view of patient status and model performance in real time.</li>
               </ul>
               <div class="tag-row">
                 <span class="tag">Computer Vision</span>
+                <span class="tag">CNNs</span>
                 <span class="tag">PyTorch</span>
-                <span class="tag">Deep Learning</span>
-                <span class="tag">Healthcare</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Medical Imaging</span>
+                <span class="tag">Healthcare AI</span>
                 <span class="tag">Model Evaluation</span>
+                <span class="tag">ROC-AUC</span>
+                <span class="tag">MLOps</span>
               </div>
             </div>
           </article>
